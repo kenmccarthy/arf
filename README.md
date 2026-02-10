@@ -71,6 +71,12 @@ Serve the project root as a static site. No build step is needed. Any static hos
 - [LinkedIn](https://www.linkedin.com/in/hazelfarrell/)
 - [Bluesky](https://bsky.app/profile/hazelfarrell.bsky.social)
 
+## Licence
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+
+[![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
+
 ## Credits
 
 HTML version developed by Ken McCarthy using Claude Code.
