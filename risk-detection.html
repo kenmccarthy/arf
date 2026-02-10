@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Risk Assessment &amp; AI Detection - Understanding assessment vulnerabilities, risk levels, and the limitations of detection-based approaches. Part of the 2026 Assessment Redesign Framework.">
+  <meta name="author" content="Dr Hazel Farrell">
+  <title>Risk &amp; Detection | 2026 Assessment Redesign Framework</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">ARF <span>2026</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="framework.html">Framework</a>
+        <a href="principles.html">Principles</a>
+        <a href="risk-detection.html" class="active">Risk &amp; Detection</a>
+        <a href="integration.html">AI Integration</a>
+        <a href="agentic-ai.html">Agentic AI</a>
+        <a href="strategies.html">Strategies</a>
+        <a href="quality.html">Quality</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> &gt; Risk &amp; Detection
+      </nav>
+      <h1>Risk Assessment &amp; AI Detection</h1>
+      <p>Understanding assessment vulnerabilities and the limitations of detection-based approaches.</p>
+    </div>
+  </section>
+
+  <!-- Page Content -->
+  <main class="page-wrapper">
+    <div class="page-content">
+
+      <!-- Risk Assessment -->
+      <section id="risk-assessment">
+        <h2 class="mt-0">Risk Assessment</h2>
+        <p>Assessments that involve the creation of an artefact as the main or only task typically pose a higher level of risk. Similarly, assessments that have little oversight such as unsupervised online assessments also pose a high level of risk. At the opposite end of the scale are fully supervised or proctored exams which have a lower risk level, however this approach can impact on authentic assessment design and contribute to an environment of mistrust rather than a culture of integrity depending on the context and use.</p>
+      </section>
+
+      <!-- Risk Assessment Table -->
+      <section id="risk-table">
+        <h2>Risk Assessment Table</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Assessment Type</th>
+                <th>Level of Risk</th>
+                <th>Risks Posed by GenAI</th>
+                <th>Mitigation Steps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Essays and Written Assignments</strong></td>
+                <td><span class="badge badge-high">HIGH</span></td>
+                <td>AI can generate high-quality written content that may not be easily detected as non-original.</td>
+                <td>
+                  <ul>
+                    <li>Require multiple drafts and incorporate peer reviews.</li>
+                    <li>Employ oral defences or follow-up questions to verify understanding.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Unsupervised Open-Book or Remote Exams</strong></td>
+                <td><span class="badge badge-high">HIGH</span></td>
+                <td>Students might use AI to complete their exams, leading to misrepresentation of their own knowledge.</td>
+                <td>
+                  <ul>
+                    <li>Implement time constraints that limit the ability to use AI.</li>
+                    <li>Use a combination of unsupervised open-book and in-person assessments.</li>
+                    <li>Randomise questions and personalise them to individual students.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Online Quizzes</strong></td>
+                <td><span class="badge badge-medium">MEDIUM</span></td>
+                <td>AI can assist in answering questions, especially multiple-choice ones, if they are available online.</td>
+                <td>
+                  <ul>
+                    <li>Use question banks to randomise questions.</li>
+                    <li>Employ proctoring software that monitors students.</li>
+                    <li>Incorporate questions that require critical thinking and personalised responses.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Research Papers</strong></td>
+                <td><span class="badge badge-medium">MEDIUM</span></td>
+                <td>AI can generate or heavily assist in creating research papers, making it hard to detect authentic student work.</td>
+                <td>
+                  <ul>
+                    <li>Require detailed methodology sections and data analysis.</li>
+                    <li>Conduct oral presentations of research findings.</li>
+                    <li>Require pre-final drafts and incorporate peer reviews.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Lab Reports</strong></td>
+                <td><span class="badge badge-medium">MEDIUM</span></td>
+                <td>AI can help generate content for lab reports, including data interpretation and discussion sections.</td>
+                <td>
+                  <ul>
+                    <li>Require students to submit raw data and detailed lab notes.</li>
+                    <li>Incorporate in-lab assessments and practical exams.</li>
+                    <li>Conduct regular checks and comparisons with past student work.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Creative Work</strong></td>
+                <td><span class="badge badge-medium">MEDIUM</span></td>
+                <td>AI can help produce content for many creative disciplines including music, graphic design, visual art, and poetry.</td>
+                <td>
+                  <ul>
+                    <li>Require submission of notes and drafts or sketches.</li>
+                    <li>Use oral presentations and Q&amp;A sessions to verify individualised approach.</li>
+                    <li>Conduct comparisons with past student work.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Problem Sets</strong></td>
+                <td><span class="badge badge-low">LOW</span></td>
+                <td>While AI can solve problems, students still need to understand the process and concepts.</td>
+                <td>
+                  <ul>
+                    <li>Include a mix of automated and hand-written problem-solving.</li>
+                    <li>Regularly update problem sets.</li>
+                    <li>Use oral exams to verify understanding.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Group Projects</strong></td>
+                <td><span class="badge badge-low">LOW</span></td>
+                <td>AI can assist in parts of the project, but collaboration and presentation skills are difficult to fake.</td>
+                <td>
+                  <ul>
+                    <li>Assess individual contributions through peer evaluations.</li>
+                    <li>Incorporate regular check-ins and progress reports.</li>
+                    <li>Require live presentations and Q&amp;A sessions.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Oral Presentations</strong></td>
+                <td><span class="badge badge-low">LOW</span></td>
+                <td>AI cannot assist directly during live presentations, but can aid in preparation.</td>
+                <td>
+                  <ul>
+                    <li>Focus assessment on delivery, understanding, and ability to answer questions.</li>
+                    <li>Use varied formats like impromptu topics or interactive Q&amp;A.</li>
+                    <li>Require submission of notes and drafts.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout callout-info">
+          <p>In addition to the mitigation steps above, a variety of assessment media such as journals, e-portfolios, vlogs or blogs can be selected to accompany larger pieces of work or as stand-alone assessments. Activities involving critical thinking, decision-making, and reflection are more difficult for GenAI to simulate.</p>
+        </div>
+      </section>
+
+      <!-- AI Detection -->
+      <section id="ai-detection">
+        <h2>AI Detection: Limits, Risks, and Appropriate Use</h2>
+        <p>A range of AI detection tools have been developed in response to the increasing availability of GenAI. However, current evidence indicates that these tools produce both false positives and false negatives and cannot reliably determine authorship or intent. As a result, they are not suitable for use as primary or definitive evidence of academic misconduct.</p>
+        <p>There are also significant equity and fairness concerns associated with AI detection. Research suggests that such tools may disproportionately affect multilingual writers and students whose writing does not align with dominant linguistic norms.</p>
+      </section>
+
+      <!-- Appropriate Use of Detection Tools -->
+      <section id="appropriate-use">
+        <h2>Appropriate Use of Detection Tools</h2>
+        <p>Within this framework, AI detection tools are understood as having, at most, a limited and contextual role.</p>
+        <div class="callout callout-success">
+          <h4>They may be used as:</h4>
+          <ul>
+            <li>Conversation starters to prompt discussion with students</li>
+            <li>One indicator among many when reviewing assessment submissions</li>
+            <li>A means of supporting educational dialogue rather than enforcing punitive measures</li>
+          </ul>
+        </div>
+        <div class="callout callout-important">
+          <h4>They should not be used as:</h4>
+          <ul>
+            <li>Sole or decisive evidence in academic misconduct cases</li>
+            <li>A substitute for robust assessment design</li>
+            <li>A proxy for evaluating learning or understanding</li>
+          </ul>
+        </div>
+        <p>Effective academic integrity practice in an AI-enhanced environment depends primarily on structural assessment redesign. Assessments that make learning processes visible — through staged tasks, reflective elements, oral components, and evidence of decision-making — reduce reliance on detection technologies and strengthen the validity of assessment judgements.</p>
+      </section>
+
+      <!-- Postgraduate Programmes -->
+      <section id="postgraduate">
+        <h2>Postgraduate Programmes</h2>
+        <p>While postgraduate work is often more closely supervised, the above may be adapted and applied where appropriate.</p>
+        <ul>
+          <li>Oral examinations and presentations with Q&amp;A sessions can be increased throughout pinch points in the research journey</li>
+          <li>The requirement of a reflective journal documenting the thought process is valuable both from a learning perspective and to support integrity</li>
+          <li>Active learning such as collaboration with peers through group project work can lower the risk of AI misuse</li>
+          <li>Working with industry for problem solving and co-creating is a robust approach</li>
+          <li>Facilitating a workshop on GenAI and research at an early stage could contribute towards creating a culture of transparency and integrity</li>
+          <li>Implications require more time investment particularly for large cohorts; needs consideration in resourcing</li>
+        </ul>
+      </section>
+
+      <!-- Page Navigation -->
+      <nav class="page-nav" aria-label="Page navigation">
+        <a href="principles.html" class="prev">
+          <span class="label">Previous</span>
+          <span class="title">Core Principles</span>
+        </a>
+        <a href="integration.html" class="next">
+          <span class="label">Next</span>
+          <span class="title">AI Integration</span>
+        </a>
+      </nav>
+
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="page-sidebar">
+      <nav class="sidebar-nav" aria-label="On this page">
+        <h4>On This Page</h4>
+        <ul>
+          <li><a href="#risk-assessment">Risk Assessment</a></li>
+          <li><a href="#risk-table">Risk Table</a></li>
+          <li><a href="#ai-detection">AI Detection</a></li>
+          <li><a href="#appropriate-use">Appropriate Use</a></li>
+          <li><a href="#postgraduate">Postgraduate Programmes</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Framework</h4>
+        <ul>
+          <li><a href="framework.html">Framework Overview</a></li>
+          <li><a href="principles.html">Core Principles</a></li>
+          <li><a href="risk-detection.html">Risk &amp; Detection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Assessment</h4>
+        <ul>
+          <li><a href="integration.html">AI Integration</a></li>
+          <li><a href="agentic-ai.html">Agentic AI</a></li>
+          <li><a href="strategies.html">Design Strategies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="quality.html">Quality Assurance</a></li>
+          <li><a href="resources.html">Resources &amp; Tips</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2026 Assessment Redesign Framework | Dr Hazel Farrell | GenAI:N3</p>
+    </div>
+  </footer>
+
+</body>
+</html>
