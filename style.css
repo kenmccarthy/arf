@@ -667,6 +667,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.92rem;
+  border-bottom: none;
 }
 
 thead {
@@ -1201,6 +1202,47 @@ td ul li {
     background: #eee;
     color: #000;
   }
+}
+
+/* --- Scroll-to-top Button --- */
+.scroll-top {
+  position: fixed;
+  bottom: var(--space-xl);
+  right: var(--space-xl);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.15s ease;
+  pointer-events: none;
+  z-index: 90;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll-top:hover {
+  background: var(--color-accent);
+}
+
+/* --- Sidebar Active Highlight --- */
+.sidebar-nav a.sidebar-active {
+  color: var(--color-primary);
+  border-left-color: var(--color-accent);
+  background: var(--color-border-light);
+  font-weight: 600;
 }
 
 /* --- Accessibility --- */
