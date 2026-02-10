@@ -11,9 +11,9 @@
   --color-primary-dark: #132842;
 
   /* Accent */
-  --color-accent: #e07a2f;
-  --color-accent-light: #f0a060;
-  --color-accent-dark: #c06520;
+  --color-accent: #b8860b;
+  --color-accent-light: #d4a437;
+  --color-accent-dark: #9a7009;
 
   /* Track colors */
   --color-track1: #2563eb;
@@ -820,8 +820,16 @@ td ul li {
   padding-top: var(--space-lg);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.85rem;
-  text-align: center;
+  text-align: right;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-bottom a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom a:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* --- Next/Prev Navigation --- */
