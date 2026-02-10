@@ -269,7 +269,7 @@ strong {
 }
 
 .main-nav a.active {
-  color: #ffffff;
+  color: var(--color-accent-light);
   background: rgba(255, 255, 255, 0.15);
 }
 
