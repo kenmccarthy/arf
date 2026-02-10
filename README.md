@@ -21,7 +21,7 @@ This framework supports educators in redesigning assessments to ensure they rema
 
 ## Technology
 
-- Pure static HTML5 and CSS3 — no JavaScript frameworks or build tools required
+- Static HTML5, CSS3, and vanilla JavaScript — no frameworks or build tools required
 - CSS custom properties (design tokens) for consistent theming
 - Responsive design with mobile hamburger navigation
 - Print-friendly styles
@@ -50,6 +50,7 @@ arf/
 ├── resources.html          # Resources & Tips
 ├── glossary.html           # Glossary
 ├── style.css               # Design system & styles
+├── enhancements.js         # Lightweight UX enhancements
 ├── favicon.svg             # SVG favicon
 ├── favicon.png             # 32x32 PNG favicon
 ├── apple-touch-icon.png    # 180x180 Apple touch icon
