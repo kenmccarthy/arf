@@ -205,10 +205,11 @@ strong {
 }
 
 .site-logo {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
   white-space: nowrap;
+  letter-spacing: 0.01em;
 }
 
 .site-logo span {
@@ -873,6 +874,32 @@ td ul li {
 .page-nav .next {
   text-align: right;
   margin-left: auto;
+}
+
+/* --- Glossary --- */
+.glossary-list {
+  margin: 0;
+  padding: 0;
+}
+
+.glossary-list dt {
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  font-size: 1.05rem;
+}
+
+.glossary-list dt:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.glossary-list dd {
+  margin-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
 }
 
 /* --- Utility --- */
