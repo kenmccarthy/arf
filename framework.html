@@ -1,199 +1,368 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Framework Overview - Understanding the foundations of assessment redesign in the age of GenAI. Part of the 2026 Assessment Redesign Framework.">
-  <meta name="author" content="Dr Hazel Farrell">
-  <title>Framework Overview | 2026 Assessment Redesign Framework</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Framework Overview - Understanding the foundations of assessment redesign in the age of GenAI. Part of the 2026 Assessment Redesign Framework."
+    />
+    <meta name="author" content="Dr Hazel Farrell" />
+    <title>Framework Overview | 2026 Assessment Redesign Framework</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          onclick="document.querySelector('.main-nav').classList.toggle('open')"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <span class="mobile-title">2026 Assessment Redesign Framework</span>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="framework.html" class="active">Framework</a>
+          <a href="principles.html">Principles</a>
+          <a href="risk-detection.html">Risk &amp; Detection</a>
+          <a href="integration.html">AI Integration</a>
+          <a href="agentic-ai.html">Agentic AI</a>
+          <a href="strategies.html">Strategies</a>
+          <a href="quality.html">Quality</a>
+          <a href="resources.html">Resources</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="course/index.html">Course</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Site Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <span class="mobile-title">2026 Assessment Redesign Framework</span>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="framework.html" class="active">Framework</a>
-        <a href="principles.html">Principles</a>
-        <a href="risk-detection.html">Risk &amp; Detection</a>
-        <a href="integration.html">AI Integration</a>
-        <a href="agentic-ai.html">Agentic AI</a>
-        <a href="strategies.html">Strategies</a>
-        <a href="quality.html">Quality</a>
-        <a href="resources.html">Resources</a>
-        <a href="glossary.html">Glossary</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &gt; Framework
+        </nav>
+        <h1>Framework Overview</h1>
+        <p>
+          Understanding the foundations of assessment redesign in the age of
+          GenAI.
+        </p>
+      </div>
+    </section>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a> &gt; Framework
-      </nav>
-      <h1>Framework Overview</h1>
-      <p>Understanding the foundations of assessment redesign in the age of GenAI.</p>
-    </div>
-  </section>
+    <!-- Page Content -->
+    <main class="page-wrapper">
+      <div class="page-content">
+        <!-- Introduction -->
+        <section id="introduction">
+          <h2 class="mt-0">Introduction</h2>
+          <p>
+            Since the launch of ChatGPT in November 2022 and subsequent surge in
+            Generative Artificial Intelligence (GenAI) technology, the education
+            sector has been impacted significantly, with efforts to develop
+            policies, strategies, and guidelines to support staff and students
+            in navigating the changing landscape. While these technologies offer
+            great potential for enhancing learning experiences, they also pose
+            significant challenges to academic integrity.
+          </p>
+          <p>
+            Assessment methods such as essays, unsupervised open-book or remote
+            exams, and online quizzes, are increasingly vulnerable, as students
+            can access AI tools to produce content that appears to be original
+            but is not their own work.
+          </p>
+          <p>
+            Although AI detection tools have emerged, their reliability remains
+            limited, and they cannot serve as definitive evidence of academic
+            misconduct. The focus therefore shifts from detection to prevention,
+            with emphasis on authentic learning experiences. This presents an
+            urgent need for higher education institutions to reconsider their
+            assessment strategies to uphold academic standards and ensure that
+            assessments accurately reflect students' knowledge and skills.
+          </p>
+        </section>
 
-  <!-- Page Content -->
-  <main class="page-wrapper">
-    <div class="page-content">
+        <!-- The Evolving Policy Context -->
+        <section id="policy-context">
+          <h2>The Evolving Policy Context</h2>
+          <p>
+            Assessment redesign is not solely a pedagogical issue but also a
+            governance, quality, and ethical responsibility. National and
+            international bodies now emphasise that assessment practices must
+            remain robust when AI is increasingly accessible.
+          </p>
+          <div class="callout callout-info">
+            <h4>Key Developments</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://hea.ie/assets/uploads/2025/12/hea-genai-policy-framework.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >National guidance</a
+                >
+                encouraging AI literacy, transparency, and equitable access
+              </li>
+              <li>
+                <a
+                  href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+                  target="_blank"
+                  rel="noopener"
+                  >UNESCO's Recommendation on the Ethics of AI</a
+                >, which emphasises human oversight, inclusion, and
+                accountability
+              </li>
+              <li>
+                The evolving
+                <a
+                  href="https://artificialintelligenceact.eu/"
+                  target="_blank"
+                  rel="noopener"
+                  >EU AI Act</a
+                >, which highlights education as a high-impact context requiring
+                transparency and risk mitigation
+              </li>
+            </ul>
+          </div>
+          <p>
+            These developments reinforce the central argument of this framework:
+            assessment must be redesigned structurally, rather than focusing on
+            detection.
+          </p>
+        </section>
 
-      <!-- Introduction -->
-      <section id="introduction">
-        <h2 class="mt-0">Introduction</h2>
-        <p>Since the launch of ChatGPT in November 2022 and subsequent surge in Generative Artificial Intelligence (GenAI) technology, the education sector has been impacted significantly, with efforts to develop policies, strategies, and guidelines to support staff and students in navigating the changing landscape. While these technologies offer great potential for enhancing learning experiences, they also pose significant challenges to academic integrity.</p>
-        <p>Assessment methods such as essays, unsupervised open-book or remote exams, and online quizzes, are increasingly vulnerable, as students can access AI tools to produce content that appears to be original but is not their own work.</p>
-        <p>Although AI detection tools have emerged, their reliability remains limited, and they cannot serve as definitive evidence of academic misconduct. The focus therefore shifts from detection to prevention, with emphasis on authentic learning experiences. This presents an urgent need for higher education institutions to reconsider their assessment strategies to uphold academic standards and ensure that assessments accurately reflect students' knowledge and skills.</p>
-      </section>
-
-      <!-- The Evolving Policy Context -->
-      <section id="policy-context">
-        <h2>The Evolving Policy Context</h2>
-        <p>Assessment redesign is not solely a pedagogical issue but also a governance, quality, and ethical responsibility. National and international bodies now emphasise that assessment practices must remain robust when AI is increasingly accessible.</p>
-        <div class="callout callout-info">
-          <h4>Key Developments</h4>
+        <!-- Objectives -->
+        <section id="objectives">
+          <h2>Objectives</h2>
+          <p>
+            The goal of assessment redesign is to develop robust, fair, valid,
+            and educationally meaningful approaches that ensure students can
+            demonstrate genuine learning, understanding, and capability.
+          </p>
           <ul>
-            <li><a href="https://hea.ie/assets/uploads/2025/12/hea-genai-policy-framework.pdf" target="_blank" rel="noopener">National guidance</a> encouraging AI literacy, transparency, and equitable access</li>
-            <li><a href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics" target="_blank" rel="noopener">UNESCO's Recommendation on the Ethics of AI</a>, which emphasises human oversight, inclusion, and accountability</li>
-            <li>The evolving <a href="https://artificialintelligenceact.eu/" target="_blank" rel="noopener">EU AI Act</a>, which highlights education as a high-impact context requiring transparency and risk mitigation</li>
+            <li>
+              Rather than focusing solely on preventing misuse of AI tools,
+              assessment should be designed to make learning visible
+            </li>
+            <li>
+              Incorporating a diverse range of assessment types, balancing
+              formative and summative approaches
+            </li>
+            <li>
+              Greater emphasis on process, reasoning, and development over time
+            </li>
+            <li>
+              Redesigning assessment presents challenges, including time
+              constraints, large class sizes, and evolving institutional
+              expectations
+            </li>
+            <li>
+              Some assessments may appropriately integrate AI while others may
+              require independent demonstration
+            </li>
+            <li>
+              The central guiding principle remains the alignment of assessment
+              with programme and module learning outcomes
+            </li>
+          </ul>
+        </section>
+
+        <!-- Scope -->
+        <section id="scope">
+          <h2>Scope</h2>
+          <p>
+            This framework supports educators and programme teams in rethinking
+            assessment design in the context of GenAI.
+          </p>
+          <p>The framework supports educators to:</p>
+          <ul>
+            <li>
+              Consider the purpose of each assessment and determine whether
+              GenAI use supports or undermines the intended learning outcomes
+            </li>
+            <li>
+              Identify assessment types that may be particularly vulnerable to
+              inappropriate AI use and prioritise these for structural redesign
+            </li>
+            <li>
+              Explore assessment approaches in collaboration with
+              discipline-area colleagues
+            </li>
+            <li>
+              Consider where and how GenAI can be meaningfully integrated into
+              assessment
+            </li>
+            <li>
+              Ensure coherence across modules and stages, contributing to a
+              balanced programme-level assessment strategy
+            </li>
+          </ul>
+          <div class="callout callout-warning">
+            <p>
+              This framework does not prescribe a single solution, but offers
+              principles and strategies that can be adapted to disciplinary
+              contexts, institutional policies, and evolving technological and
+              regulatory environments.
+            </p>
+          </div>
+        </section>
+
+        <!-- Reconsidering the Purpose of Assessment -->
+        <section id="purpose">
+          <h2>Reconsidering the Purpose of Assessment</h2>
+          <p>
+            In an educational landscape where AI has become so embedded,
+            reconsidering the purpose of assessment becomes imperative to foster
+            a more meaningful and authentic learning experience.
+          </p>
+          <ul>
+            <li>
+              Focus should shift towards assessing higher-order thinking skills,
+              such as critical analysis, creativity, and problem-solving
+            </li>
+            <li>
+              Assessments can better reflect real-world applications and prepare
+              students for the modern workforce
+            </li>
+            <li>
+              Students are evaluated not just on what they know, but on how they
+              think and adapt
+            </li>
+            <li>
+              The redefined purpose should aim to cultivate lifelong learners
+              equipped with skills to navigate and innovate in an AI-driven
+              world
+            </li>
+          </ul>
+          <blockquote>
+            <p>
+              <a
+                href="https://drphilippahardman.substack.com/p/a-post-ai-learning-taxonomy"
+                target="_blank"
+                rel="noopener"
+                >Phillippa Hardman</a
+              >
+              has suggested alternatives to Bloom's Taxonomy that focus on
+              skills AI "enhances rather than replaces," encouraging educators
+              to prioritise competencies where human judgement, creativity, and
+              contextual reasoning remain essential.
+            </p>
+            <cite>Phillippa Hardman</cite>
+          </blockquote>
+          <figure style="margin: var(--space-xl) 0; text-align: center">
+            <img
+              src="images/hardman-taxonomy.jpg"
+              alt="A Post-AI Learning Taxonomy by Dr Philippa Hardman, showing 6 levels: 1. Analyse, 2. Understand, 3. Apply, 4. Create, 5. Collaborate, 6. Disrupt — focusing on skills AI enhances rather than replaces."
+              style="
+                max-width: 100%;
+                border-radius: var(--radius-md);
+                border: 1px solid var(--color-border);
+              "
+            />
+            <figcaption
+              style="
+                margin-top: var(--space-sm);
+                font-size: 0.85rem;
+                color: var(--color-text-muted);
+              "
+            >
+              A Post-AI Learning Taxonomy — Dr Philippa Hardman (DOMS)
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- Page Navigation -->
+        <nav class="page-nav" aria-label="Page navigation">
+          <a href="index.html" class="prev">
+            <span class="label">Previous</span>
+            <span class="title">Home</span>
+          </a>
+          <a href="principles.html" class="next">
+            <span class="label">Next</span>
+            <span class="title">Core Principles</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="page-sidebar">
+        <nav class="sidebar-nav" aria-label="On this page">
+          <h4>On This Page</h4>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#policy-context">Policy Context</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#scope">Scope</a></li>
+            <li><a href="#purpose">Purpose of Assessment</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>Framework</h4>
+          <ul>
+            <li><a href="framework.html">Framework Overview</a></li>
+            <li><a href="principles.html">Core Principles</a></li>
+            <li><a href="risk-detection.html">Risk &amp; Detection</a></li>
           </ul>
         </div>
-        <p>These developments reinforce the central argument of this framework: assessment must be redesigned structurally, rather than focusing on detection.</p>
-      </section>
-
-      <!-- Objectives -->
-      <section id="objectives">
-        <h2>Objectives</h2>
-        <p>The goal of assessment redesign is to develop robust, fair, valid, and educationally meaningful approaches that ensure students can demonstrate genuine learning, understanding, and capability.</p>
-        <ul>
-          <li>Rather than focusing solely on preventing misuse of AI tools, assessment should be designed to make learning visible</li>
-          <li>Incorporating a diverse range of assessment types, balancing formative and summative approaches</li>
-          <li>Greater emphasis on process, reasoning, and development over time</li>
-          <li>Redesigning assessment presents challenges, including time constraints, large class sizes, and evolving institutional expectations</li>
-          <li>Some assessments may appropriately integrate AI while others may require independent demonstration</li>
-          <li>The central guiding principle remains the alignment of assessment with programme and module learning outcomes</li>
-        </ul>
-      </section>
-
-      <!-- Scope -->
-      <section id="scope">
-        <h2>Scope</h2>
-        <p>This framework supports educators and programme teams in rethinking assessment design in the context of GenAI.</p>
-        <p>The framework supports educators to:</p>
-        <ul>
-          <li>Consider the purpose of each assessment and determine whether GenAI use supports or undermines the intended learning outcomes</li>
-          <li>Identify assessment types that may be particularly vulnerable to inappropriate AI use and prioritise these for structural redesign</li>
-          <li>Explore assessment approaches in collaboration with discipline-area colleagues</li>
-          <li>Consider where and how GenAI can be meaningfully integrated into assessment</li>
-          <li>Ensure coherence across modules and stages, contributing to a balanced programme-level assessment strategy</li>
-        </ul>
-        <div class="callout callout-warning">
-          <p>This framework does not prescribe a single solution, but offers principles and strategies that can be adapted to disciplinary contexts, institutional policies, and evolving technological and regulatory environments.</p>
+        <div class="footer-col">
+          <h4>Assessment</h4>
+          <ul>
+            <li><a href="integration.html">AI Integration</a></li>
+            <li><a href="agentic-ai.html">Agentic AI</a></li>
+            <li><a href="strategies.html">Design Strategies</a></li>
+          </ul>
         </div>
-      </section>
-
-      <!-- Reconsidering the Purpose of Assessment -->
-      <section id="purpose">
-        <h2>Reconsidering the Purpose of Assessment</h2>
-        <p>In an educational landscape where AI has become so embedded, reconsidering the purpose of assessment becomes imperative to foster a more meaningful and authentic learning experience.</p>
-        <ul>
-          <li>Focus should shift towards assessing higher-order thinking skills, such as critical analysis, creativity, and problem-solving</li>
-          <li>Assessments can better reflect real-world applications and prepare students for the modern workforce</li>
-          <li>Students are evaluated not just on what they know, but on how they think and adapt</li>
-          <li>The redefined purpose should aim to cultivate lifelong learners equipped with skills to navigate and innovate in an AI-driven world</li>
-        </ul>
-        <blockquote>
-          <p><a href="https://drphilippahardman.substack.com/p/a-post-ai-learning-taxonomy" target="_blank" rel="noopener">Phillippa Hardman</a> has suggested alternatives to Bloom's Taxonomy that focus on skills AI "enhances rather than replaces," encouraging educators to prioritise competencies where human judgement, creativity, and contextual reasoning remain essential.</p>
-          <cite>Phillippa Hardman</cite>
-        </blockquote>
-        <figure style="margin: var(--space-xl) 0; text-align: center;">
-          <img src="images/hardman-taxonomy.jpg" alt="A Post-AI Learning Taxonomy by Dr Philippa Hardman, showing 6 levels: 1. Analyse, 2. Understand, 3. Apply, 4. Create, 5. Collaborate, 6. Disrupt — focusing on skills AI enhances rather than replaces." style="max-width: 100%; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
-          <figcaption style="margin-top: var(--space-sm); font-size: 0.85rem; color: var(--color-text-muted);">A Post-AI Learning Taxonomy — Dr Philippa Hardman (DOMS)</figcaption>
-        </figure>
-      </section>
-
-      <!-- Page Navigation -->
-      <nav class="page-nav" aria-label="Page navigation">
-        <a href="index.html" class="prev">
-          <span class="label">Previous</span>
-          <span class="title">Home</span>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="resources.html">Resources &amp; Tips</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="course/index.html">Course</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank"
+          rel="noopener"
+          class="footer-licence"
+        >
+          <img
+            src="https://licensebuttons.net/l/by-sa/4.0/88x31.png"
+            alt="CC BY-SA 4.0"
+          />
+          <span>CC BY-SA 4.0</span>
         </a>
-        <a href="principles.html" class="next">
-          <span class="label">Next</span>
-          <span class="title">Core Principles</span>
-        </a>
-      </nav>
-
-    </div>
-
-    <!-- Sidebar -->
-    <aside class="page-sidebar">
-      <nav class="sidebar-nav" aria-label="On this page">
-        <h4>On This Page</h4>
-        <ul>
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#policy-context">Policy Context</a></li>
-          <li><a href="#objectives">Objectives</a></li>
-          <li><a href="#scope">Scope</a></li>
-          <li><a href="#purpose">Purpose of Assessment</a></li>
-        </ul>
-      </nav>
-    </aside>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <h4>Framework</h4>
-        <ul>
-          <li><a href="framework.html">Framework Overview</a></li>
-          <li><a href="principles.html">Core Principles</a></li>
-          <li><a href="risk-detection.html">Risk &amp; Detection</a></li>
-        </ul>
+        <p>
+          2026 Assessment Redesign Framework | Dr Hazel Farrell |
+          <a href="https://genain3.ie" target="_blank" rel="noopener"
+            >GenAI:N3</a
+          ><br />HTML version developed by Ken McCarthy using Claude Code
+        </p>
       </div>
-      <div class="footer-col">
-        <h4>Assessment</h4>
-        <ul>
-          <li><a href="integration.html">AI Integration</a></li>
-          <li><a href="agentic-ai.html">Agentic AI</a></li>
-          <li><a href="strategies.html">Design Strategies</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="quality.html">Quality Assurance</a></li>
-          <li><a href="resources.html">Resources &amp; Tips</a></li>
-          <li><a href="glossary.html">Glossary</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" class="footer-licence">
-        <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="CC BY-SA 4.0">
-        <span>CC BY-SA 4.0</span>
-      </a>
-      <p>2026 Assessment Redesign Framework | Dr Hazel Farrell | <a href="https://genain3.ie" target="_blank" rel="noopener">GenAI:N3</a><br>HTML version developed by Ken McCarthy using Claude Code</p>
-    </div>
-  </footer>
+    </footer>
 
-<script src="enhancements.js" defer></script>
-<script data-goatcounter="https://arf.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-</body>
+    <script src="enhancements.js" defer></script>
+    <script
+      data-goatcounter="https://arf.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
 </html>

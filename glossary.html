@@ -1,351 +1,646 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Glossary - Key terms and concepts used throughout the 2026 Assessment Redesign Framework.">
-  <meta name="author" content="Dr Hazel Farrell">
-  <title>Glossary | 2026 Assessment Redesign Framework</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Glossary - Key terms and concepts used throughout the 2026 Assessment Redesign Framework."
+    />
+    <meta name="author" content="Dr Hazel Farrell" />
+    <title>Glossary | 2026 Assessment Redesign Framework</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          onclick="document.querySelector('.main-nav').classList.toggle('open')"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <span class="mobile-title">2026 Assessment Redesign Framework</span>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="framework.html">Framework</a>
+          <a href="principles.html">Principles</a>
+          <a href="risk-detection.html">Risk &amp; Detection</a>
+          <a href="integration.html">AI Integration</a>
+          <a href="agentic-ai.html">Agentic AI</a>
+          <a href="strategies.html">Strategies</a>
+          <a href="quality.html">Quality</a>
+          <a href="resources.html">Resources</a>
+          <a href="glossary.html" class="active">Glossary</a>
+          <a href="course/index.html">Course</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Site Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <span class="mobile-title">2026 Assessment Redesign Framework</span>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="framework.html">Framework</a>
-        <a href="principles.html">Principles</a>
-        <a href="risk-detection.html">Risk &amp; Detection</a>
-        <a href="integration.html">AI Integration</a>
-        <a href="agentic-ai.html">Agentic AI</a>
-        <a href="strategies.html">Strategies</a>
-        <a href="quality.html">Quality</a>
-        <a href="resources.html">Resources</a>
-        <a href="glossary.html" class="active">Glossary</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &gt; Glossary
+        </nav>
+        <h1>Glossary</h1>
+        <p>
+          Key terms and concepts used throughout the Assessment Redesign
+          Framework.
+        </p>
+      </div>
+    </section>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a> &gt; Glossary
-      </nav>
-      <h1>Glossary</h1>
-      <p>Key terms and concepts used throughout the Assessment Redesign Framework.</p>
-    </div>
-  </section>
+    <!-- Main Content -->
+    <main class="page-wrapper">
+      <div class="page-content">
+        <!-- A -->
+        <section id="letter-a">
+          <h2 class="mt-0">A</h2>
+          <dl class="glossary-list">
+            <dt id="academic-integrity"><strong>Academic Integrity</strong></dt>
+            <dd>
+              The commitment to honesty, trust, fairness, respect,
+              responsibility, and courage in all academic work. In the context
+              of GenAI, academic integrity extends to transparent and ethical
+              use of AI tools.
+              <a href="principles.html#transparency"
+                >Read more on the Principles page</a
+              >.
+            </dd>
 
-  <!-- Main Content -->
-  <main class="page-wrapper">
-    <div class="page-content">
+            <dt id="agentic-ai"><strong>Agentic AI</strong></dt>
+            <dd>
+              AI systems that can plan, act, iterate, and make decisions across
+              multiple steps with limited human input. Unlike earlier generative
+              tools, agentic AI can autonomously break tasks into sub-goals,
+              retrieve and synthesise information, and execute workflows.
+              <a href="agentic-ai.html">Read more on the Agentic AI page</a>.
+            </dd>
 
-      <!-- A -->
-      <section id="letter-a">
-        <h2 class="mt-0">A</h2>
-        <dl class="glossary-list">
-          <dt id="academic-integrity"><strong>Academic Integrity</strong></dt>
-          <dd>The commitment to honesty, trust, fairness, respect, responsibility, and courage in all academic work. In the context of GenAI, academic integrity extends to transparent and ethical use of AI tools. <a href="principles.html#transparency">Read more on the Principles page</a>.</dd>
+            <dt id="ai-detection-tools"><strong>AI Detection Tools</strong></dt>
+            <dd>
+              Software designed to identify AI-generated content. Current
+              evidence indicates these tools produce both false positives and
+              false negatives and cannot reliably determine authorship or
+              intent.
+              <a href="risk-detection.html#ai-detection"
+                >Read more on the Risk &amp; Detection page</a
+              >.
+            </dd>
 
-          <dt id="agentic-ai"><strong>Agentic AI</strong></dt>
-          <dd>AI systems that can plan, act, iterate, and make decisions across multiple steps with limited human input. Unlike earlier generative tools, agentic AI can autonomously break tasks into sub-goals, retrieve and synthesise information, and execute workflows. <a href="agentic-ai.html">Read more on the Agentic AI page</a>.</dd>
+            <dt id="ai-integration-scale">
+              <strong>AI Integration Scale</strong>
+            </dt>
+            <dd>
+              A framework developed by Leon Furze outlining five levels of GenAI
+              integration in assessment: No AI, AI Planning, AI Collaboration,
+              Full AI, and AI Exploration.
+              <a href="integration.html#ai-scale"
+                >Read more on the AI Integration page</a
+              >.
+            </dd>
 
-          <dt id="ai-detection-tools"><strong>AI Detection Tools</strong></dt>
-          <dd>Software designed to identify AI-generated content. Current evidence indicates these tools produce both false positives and false negatives and cannot reliably determine authorship or intent. <a href="risk-detection.html#ai-detection">Read more on the Risk &amp; Detection page</a>.</dd>
+            <dt id="ai-literacy"><strong>AI Literacy</strong></dt>
+            <dd>
+              The capacity to engage with AI critically, ethically, and
+              effectively, including the ability to evaluate AI outputs,
+              understand appropriate use, and recognise the role of human
+              judgement.
+              <a href="principles.html#ai-literacy"
+                >Read more on the Principles page</a
+              >.
+            </dd>
 
-          <dt id="ai-integration-scale"><strong>AI Integration Scale</strong></dt>
-          <dd>A framework developed by Leon Furze outlining five levels of GenAI integration in assessment: No AI, AI Planning, AI Collaboration, Full AI, and AI Exploration. <a href="integration.html#ai-scale">Read more on the AI Integration page</a>.</dd>
+            <dt id="ai-integrated-assessment">
+              <strong>AI-Integrated Assessment</strong>
+            </dt>
+            <dd>See <a href="#track-2">Track 2</a>.</dd>
 
-          <dt id="ai-literacy"><strong>AI Literacy</strong></dt>
-          <dd>The capacity to engage with AI critically, ethically, and effectively, including the ability to evaluate AI outputs, understand appropriate use, and recognise the role of human judgement. <a href="principles.html#ai-literacy">Read more on the Principles page</a>.</dd>
+            <dt id="ai-restricted-assessment">
+              <strong>AI-Restricted Assessment</strong>
+            </dt>
+            <dd>See <a href="#track-1">Track 1</a>.</dd>
 
-          <dt id="ai-integrated-assessment"><strong>AI-Integrated Assessment</strong></dt>
-          <dd>See <a href="#track-2">Track 2</a>.</dd>
+            <dt id="authentic-assessment">
+              <strong>Authentic Assessment</strong>
+            </dt>
+            <dd>
+              Assessment tasks that reflect real-world applications and require
+              students to apply knowledge in realistic or discipline-relevant
+              contexts, rather than reproducing information.
+              <a href="framework.html#purpose"
+                >Read more on the Framework page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-          <dt id="ai-restricted-assessment"><strong>AI-Restricted Assessment</strong></dt>
-          <dd>See <a href="#track-1">Track 1</a>.</dd>
+        <!-- B -->
+        <section id="letter-b">
+          <h2>B</h2>
+          <dl class="glossary-list">
+            <dt id="blooms-taxonomy"><strong>Bloom's Taxonomy</strong></dt>
+            <dd>
+              A hierarchical model of cognitive skills traditionally used in
+              educational assessment. Phillippa Hardman has proposed
+              alternatives focusing on skills AI enhances rather than replaces.
+              <a href="framework.html#purpose"
+                >Read more on the Framework page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-          <dt id="authentic-assessment"><strong>Authentic Assessment</strong></dt>
-          <dd>Assessment tasks that reflect real-world applications and require students to apply knowledge in realistic or discipline-relevant contexts, rather than reproducing information. <a href="framework.html#purpose">Read more on the Framework page</a>.</dd>
-        </dl>
-      </section>
+        <!-- C -->
+        <section id="letter-c">
+          <h2>C</h2>
+          <dl class="glossary-list">
+            <dt id="cognitive-offloading">
+              <strong>Cognitive Offloading</strong>
+            </dt>
+            <dd>
+              The risk of students delegating thinking, planning, and
+              decision-making to AI systems rather than engaging meaningfully
+              with the learning process. Particularly relevant with agentic AI.
+              <a href="agentic-ai.html#challenges"
+                >Read more on the Agentic AI page</a
+              >.
+            </dd>
 
-      <!-- B -->
-      <section id="letter-b">
-        <h2>B</h2>
-        <dl class="glossary-list">
-          <dt id="blooms-taxonomy"><strong>Bloom's Taxonomy</strong></dt>
-          <dd>A hierarchical model of cognitive skills traditionally used in educational assessment. Phillippa Hardman has proposed alternatives focusing on skills AI enhances rather than replaces. <a href="framework.html#purpose">Read more on the Framework page</a>.</dd>
-        </dl>
-      </section>
+            <dt id="completion-based-assessment">
+              <strong>Completion-Based Assessment</strong>
+            </dt>
+            <dd>
+              Early-stage assessment components graded on a pass/fail or
+              checklist basis rather than full criteria, used to evidence
+              learning progress without significantly increasing marking
+              workload.
+              <a href="strategies.html#staged-assessments"
+                >Read more on the Strategies page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- C -->
-      <section id="letter-c">
-        <h2>C</h2>
-        <dl class="glossary-list">
-          <dt id="cognitive-offloading"><strong>Cognitive Offloading</strong></dt>
-          <dd>The risk of students delegating thinking, planning, and decision-making to AI systems rather than engaging meaningfully with the learning process. Particularly relevant with agentic AI. <a href="agentic-ai.html#challenges">Read more on the Agentic AI page</a>.</dd>
+        <!-- D -->
+        <section id="letter-d">
+          <h2>D</h2>
+          <dl class="glossary-list">
+            <dt id="discursive-control"><strong>Discursive Control</strong></dt>
+            <dd>
+              An approach to academic integrity relying on rules, warnings, and
+              AI bans. Contrasted with structural redesign, which changes the
+              mechanics of assessment itself.
+              <a href="integration.html#structural-redesign"
+                >Read more on the AI Integration page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-          <dt id="completion-based-assessment"><strong>Completion-Based Assessment</strong></dt>
-          <dd>Early-stage assessment components graded on a pass/fail or checklist basis rather than full criteria, used to evidence learning progress without significantly increasing marking workload. <a href="strategies.html#staged-assessments">Read more on the Strategies page</a>.</dd>
-        </dl>
-      </section>
+        <!-- E -->
+        <section id="letter-e">
+          <h2>E</h2>
+          <dl class="glossary-list">
+            <dt id="eu-ai-act"><strong>EU AI Act</strong></dt>
+            <dd>
+              European legislation that highlights education as a high-impact
+              context requiring transparency and risk mitigation in the use of
+              AI systems.
+              <a href="framework.html#policy-context"
+                >Read more on the Framework page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- D -->
-      <section id="letter-d">
-        <h2>D</h2>
-        <dl class="glossary-list">
-          <dt id="discursive-control"><strong>Discursive Control</strong></dt>
-          <dd>An approach to academic integrity relying on rules, warnings, and AI bans. Contrasted with structural redesign, which changes the mechanics of assessment itself. <a href="integration.html#structural-redesign">Read more on the AI Integration page</a>.</dd>
-        </dl>
-      </section>
+        <!-- F -->
+        <section id="letter-f">
+          <h2>F</h2>
+          <dl class="glossary-list">
+            <dt id="formative-assessment">
+              <strong>Formative Assessment</strong>
+            </dt>
+            <dd>
+              Assessment designed primarily to support learning and provide
+              feedback, rather than to assign grades. Process-based approaches
+              often include formative elements.
+              <a href="strategies.html#design-strategies"
+                >Read more on the Strategies page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- E -->
-      <section id="letter-e">
-        <h2>E</h2>
-        <dl class="glossary-list">
-          <dt id="eu-ai-act"><strong>EU AI Act</strong></dt>
-          <dd>European legislation that highlights education as a high-impact context requiring transparency and risk mitigation in the use of AI systems. <a href="framework.html#policy-context">Read more on the Framework page</a>.</dd>
-        </dl>
-      </section>
+        <!-- G -->
+        <section id="letter-g">
+          <h2>G</h2>
+          <dl class="glossary-list">
+            <dt id="genai">
+              <strong>GenAI (Generative Artificial Intelligence)</strong>
+            </dt>
+            <dd>
+              AI technology capable of generating text, images, code, and other
+              content. Since the launch of ChatGPT in November 2022, GenAI has
+              significantly impacted higher education assessment.
+              <a href="framework.html#introduction"
+                >Read more on the Framework page</a
+              >.
+            </dd>
 
-      <!-- F -->
-      <section id="letter-f">
-        <h2>F</h2>
-        <dl class="glossary-list">
-          <dt id="formative-assessment"><strong>Formative Assessment</strong></dt>
-          <dd>Assessment designed primarily to support learning and provide feedback, rather than to assign grades. Process-based approaches often include formative elements. <a href="strategies.html#design-strategies">Read more on the Strategies page</a>.</dd>
-        </dl>
-      </section>
+            <dt id="graduate-attributes">
+              <strong>Graduate Attributes</strong>
+            </dt>
+            <dd>
+              The qualities, skills, and capabilities that students are expected
+              to develop during their programme of study, increasingly including
+              AI literacy.
+              <a href="quality.html#learning-outcomes"
+                >Read more on the Quality page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- G -->
-      <section id="letter-g">
-        <h2>G</h2>
-        <dl class="glossary-list">
-          <dt id="genai"><strong>GenAI (Generative Artificial Intelligence)</strong></dt>
-          <dd>AI technology capable of generating text, images, code, and other content. Since the launch of ChatGPT in November 2022, GenAI has significantly impacted higher education assessment. <a href="framework.html#introduction">Read more on the Framework page</a>.</dd>
+        <!-- H -->
+        <section id="letter-h">
+          <h2>H</h2>
+          <dl class="glossary-list">
+            <dt id="higher-order-thinking-skills">
+              <strong>Higher-Order Thinking Skills</strong>
+            </dt>
+            <dd>
+              Cognitive abilities including analysis, evaluation, synthesis, and
+              creation. Assessment redesign prioritises these skills as they are
+              less susceptible to AI automation.
+              <a href="framework.html#purpose"
+                >Read more on the Framework page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-          <dt id="graduate-attributes"><strong>Graduate Attributes</strong></dt>
-          <dd>The qualities, skills, and capabilities that students are expected to develop during their programme of study, increasingly including AI literacy. <a href="quality.html#learning-outcomes">Read more on the Quality page</a>.</dd>
-        </dl>
-      </section>
+        <!-- I -->
+        <section id="letter-i">
+          <h2>I</h2>
+          <dl class="glossary-list">
+            <dt id="institutional-supports">
+              <strong>Institutional Supports</strong>
+            </dt>
+            <dd>
+              Resources and structures at faculty, institutional, and sectoral
+              levels that enable sustainable assessment redesign, including
+              professional development, cross-disciplinary dialogue, and unified
+              guidance.
+              <a href="quality.html#institutional-supports"
+                >Read more on the Quality page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- H -->
-      <section id="letter-h">
-        <h2>H</h2>
-        <dl class="glossary-list">
-          <dt id="higher-order-thinking-skills"><strong>Higher-Order Thinking Skills</strong></dt>
-          <dd>Cognitive abilities including analysis, evaluation, synthesis, and creation. Assessment redesign prioritises these skills as they are less susceptible to AI automation. <a href="framework.html#purpose">Read more on the Framework page</a>.</dd>
-        </dl>
-      </section>
+        <!-- L -->
+        <section id="letter-l">
+          <h2>L</h2>
+          <dl class="glossary-list">
+            <dt id="learning-outcomes"><strong>Learning Outcomes</strong></dt>
+            <dd>
+              Statements describing what learners are expected to know,
+              understand, and be able to do. The central guiding principle of
+              assessment redesign is alignment with these outcomes.
+              <a href="quality.html#learning-outcomes"
+                >Read more on the Quality page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- I -->
-      <section id="letter-i">
-        <h2>I</h2>
-        <dl class="glossary-list">
-          <dt id="institutional-supports"><strong>Institutional Supports</strong></dt>
-          <dd>Resources and structures at faculty, institutional, and sectoral levels that enable sustainable assessment redesign, including professional development, cross-disciplinary dialogue, and unified guidance. <a href="quality.html#institutional-supports">Read more on the Quality page</a>.</dd>
-        </dl>
-      </section>
+        <!-- M -->
+        <section id="letter-m">
+          <h2>M</h2>
+          <dl class="glossary-list">
+            <dt id="multi-stage-assessment">
+              <strong>Multi-Stage Assessment</strong>
+            </dt>
+            <dd>
+              Assessment design where students submit plans, drafts,
+              checkpoints, or progress updates before a final submission, making
+              the evolution of their thinking visible.
+              <a href="strategies.html#staged-assessments"
+                >Read more on the Strategies page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- L -->
-      <section id="letter-l">
-        <h2>L</h2>
-        <dl class="glossary-list">
-          <dt id="learning-outcomes"><strong>Learning Outcomes</strong></dt>
-          <dd>Statements describing what learners are expected to know, understand, and be able to do. The central guiding principle of assessment redesign is alignment with these outcomes. <a href="quality.html#learning-outcomes">Read more on the Quality page</a>.</dd>
-        </dl>
-      </section>
+        <!-- O -->
+        <section id="letter-o">
+          <h2>O</h2>
+          <dl class="glossary-list">
+            <dt id="oral-components"><strong>Oral Components</strong></dt>
+            <dd>
+              Assessment elements such as presentations, vivas, demonstrations,
+              or Q&amp;A discussions that enable students to explain, justify,
+              and reflect on their work. These are lower risk for AI misuse.
+              <a href="risk-detection.html#risk-table"
+                >Read more on the Risk &amp; Detection page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- M -->
-      <section id="letter-m">
-        <h2>M</h2>
-        <dl class="glossary-list">
-          <dt id="multi-stage-assessment"><strong>Multi-Stage Assessment</strong></dt>
-          <dd>Assessment design where students submit plans, drafts, checkpoints, or progress updates before a final submission, making the evolution of their thinking visible. <a href="strategies.html#staged-assessments">Read more on the Strategies page</a>.</dd>
-        </dl>
-      </section>
+        <!-- P -->
+        <section id="letter-p">
+          <h2>P</h2>
+          <dl class="glossary-list">
+            <dt id="postplagiarism"><strong>Postplagiarism</strong></dt>
+            <dd>
+              A concept that encapsulates the new challenges to academic
+              integrity as AI tools become integrated into academic work,
+              requiring re-evaluation of traditional definitions of plagiarism.
+              <a href="resources.html#postplagiarism"
+                >Read more on the Resources page</a
+              >.
+            </dd>
 
-      <!-- O -->
-      <section id="letter-o">
-        <h2>O</h2>
-        <dl class="glossary-list">
-          <dt id="oral-components"><strong>Oral Components</strong></dt>
-          <dd>Assessment elements such as presentations, vivas, demonstrations, or Q&amp;A discussions that enable students to explain, justify, and reflect on their work. These are lower risk for AI misuse. <a href="risk-detection.html#risk-table">Read more on the Risk &amp; Detection page</a>.</dd>
-        </dl>
-      </section>
+            <dt id="process-based-assessment">
+              <strong>Process-Based Assessment</strong>
+            </dt>
+            <dd>
+              Assessment that emphasises how learners arrive at conclusions, not
+              just final products, making learning visible through reflective
+              journals, drafts, staged tasks, and iterative feedback.
+              <a href="integration.html#process"
+                >Read more on the AI Integration page</a
+              >.
+            </dd>
 
-      <!-- P -->
-      <section id="letter-p">
-        <h2>P</h2>
-        <dl class="glossary-list">
-          <dt id="postplagiarism"><strong>Postplagiarism</strong></dt>
-          <dd>A concept that encapsulates the new challenges to academic integrity as AI tools become integrated into academic work, requiring re-evaluation of traditional definitions of plagiarism. <a href="resources.html#postplagiarism">Read more on the Resources page</a>.</dd>
+            <dt id="programme-level-assessment-mapping">
+              <strong>Programme-Level Assessment Mapping</strong>
+            </dt>
+            <dd>
+              The review of assessment patterns across all stages of a programme
+              to ensure a balanced mix of assessment types and consistent
+              expectations around AI use.
+              <a href="quality.html#programme-mapping"
+                >Read more on the Quality page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-          <dt id="process-based-assessment"><strong>Process-Based Assessment</strong></dt>
-          <dd>Assessment that emphasises how learners arrive at conclusions, not just final products, making learning visible through reflective journals, drafts, staged tasks, and iterative feedback. <a href="integration.html#process">Read more on the AI Integration page</a>.</dd>
+        <!-- Q -->
+        <section id="letter-q">
+          <h2>Q</h2>
+          <dl class="glossary-list">
+            <dt id="quality-assurance"><strong>Quality Assurance</strong></dt>
+            <dd>
+              Institutional processes ensuring assessment redesign maintains
+              fairness, coherence, and academic standards, embedded within
+              programme review, annual monitoring, and curriculum approval
+              workflows.
+              <a href="quality.html#quality-processes"
+                >Read more on the Quality page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-          <dt id="programme-level-assessment-mapping"><strong>Programme-Level Assessment Mapping</strong></dt>
-          <dd>The review of assessment patterns across all stages of a programme to ensure a balanced mix of assessment types and consistent expectations around AI use. <a href="quality.html#programme-mapping">Read more on the Quality page</a>.</dd>
-        </dl>
-      </section>
+        <!-- R -->
+        <section id="letter-r">
+          <h2>R</h2>
+          <dl class="glossary-list">
+            <dt id="reflective-elements">
+              <strong>Reflective Elements</strong>
+            </dt>
+            <dd>
+              Assessment components requiring students to articulate their
+              reasoning, learning processes, and how they used or chose not to
+              use AI tools.
+              <a href="strategies.html#design-strategies"
+                >Read more on the Strategies page</a
+              >.
+            </dd>
 
-      <!-- Q -->
-      <section id="letter-q">
-        <h2>Q</h2>
-        <dl class="glossary-list">
-          <dt id="quality-assurance"><strong>Quality Assurance</strong></dt>
-          <dd>Institutional processes ensuring assessment redesign maintains fairness, coherence, and academic standards, embedded within programme review, annual monitoring, and curriculum approval workflows. <a href="quality.html#quality-processes">Read more on the Quality page</a>.</dd>
-        </dl>
-      </section>
+            <dt id="risk-assessment"><strong>Risk Assessment</strong></dt>
+            <dd>
+              The evaluation of how vulnerable different assessment types are to
+              inappropriate GenAI use, categorised as high, medium, or low risk.
+              <a href="risk-detection.html#risk-assessment"
+                >Read more on the Risk &amp; Detection page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- R -->
-      <section id="letter-r">
-        <h2>R</h2>
-        <dl class="glossary-list">
-          <dt id="reflective-elements"><strong>Reflective Elements</strong></dt>
-          <dd>Assessment components requiring students to articulate their reasoning, learning processes, and how they used or chose not to use AI tools. <a href="strategies.html#design-strategies">Read more on the Strategies page</a>.</dd>
+        <!-- S -->
+        <section id="letter-s">
+          <h2>S</h2>
+          <dl class="glossary-list">
+            <dt id="structural-redesign">
+              <strong>Structural Redesign</strong>
+            </dt>
+            <dd>
+              Changing the mechanics of assessment to build validity into the
+              task itself, as opposed to discursive control which relies on
+              rules and student compliance.
+              <a href="integration.html#structural-redesign"
+                >Read more on the AI Integration page</a
+              >.
+            </dd>
 
-          <dt id="risk-assessment"><strong>Risk Assessment</strong></dt>
-          <dd>The evaluation of how vulnerable different assessment types are to inappropriate GenAI use, categorised as high, medium, or low risk. <a href="risk-detection.html#risk-assessment">Read more on the Risk &amp; Detection page</a>.</dd>
-        </dl>
-      </section>
+            <dt id="summative-assessment">
+              <strong>Summative Assessment</strong>
+            </dt>
+            <dd>
+              Assessment designed to evaluate and grade student learning at the
+              conclusion of a period of study. Redesign aims to balance
+              summative with formative approaches.
+              <a href="strategies.html#design-strategies"
+                >Read more on the Strategies page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- S -->
-      <section id="letter-s">
-        <h2>S</h2>
-        <dl class="glossary-list">
-          <dt id="structural-redesign"><strong>Structural Redesign</strong></dt>
-          <dd>Changing the mechanics of assessment to build validity into the task itself, as opposed to discursive control which relies on rules and student compliance. <a href="integration.html#structural-redesign">Read more on the AI Integration page</a>.</dd>
+        <!-- T -->
+        <section id="letter-t">
+          <h2>T</h2>
+          <dl class="glossary-list">
+            <dt id="track-1">
+              <strong>Track 1 (AI-Restricted / Secured)</strong>
+            </dt>
+            <dd>
+              Assessment where AI use is typically not permitted. The focus is
+              on 'assessment of learning' through supervised conditions.
+              Unauthorised AI use is considered a breach of academic integrity.
+              <a href="integration.html#two-track"
+                >Read more on the AI Integration page</a
+              >.
+            </dd>
 
-          <dt id="summative-assessment"><strong>Summative Assessment</strong></dt>
-          <dd>Assessment designed to evaluate and grade student learning at the conclusion of a period of study. Redesign aims to balance summative with formative approaches. <a href="strategies.html#design-strategies">Read more on the Strategies page</a>.</dd>
-        </dl>
-      </section>
+            <dt id="track-2">
+              <strong>Track 2 (AI-Integrated / Open)</strong>
+            </dt>
+            <dd>
+              Assessment where responsible use of AI is encouraged. These are
+              less supervised, promoting engagement with AI and preparing
+              students for an AI-integrated society. Acceptable usage is
+              detailed in Assessment Briefs.
+              <a href="integration.html#two-track"
+                >Read more on the AI Integration page</a
+              >.
+            </dd>
 
-      <!-- T -->
-      <section id="letter-t">
-        <h2>T</h2>
-        <dl class="glossary-list">
-          <dt id="track-1"><strong>Track 1 (AI-Restricted / Secured)</strong></dt>
-          <dd>Assessment where AI use is typically not permitted. The focus is on 'assessment of learning' through supervised conditions. Unauthorised AI use is considered a breach of academic integrity. <a href="integration.html#two-track">Read more on the AI Integration page</a>.</dd>
+            <dt id="transparency"><strong>Transparency</strong></dt>
+            <dd>
+              Clearly communicating expectations around the purpose of
+              assessment, criteria for success, and the extent to which AI use
+              is permitted or restricted. One of the five core principles.
+              <a href="principles.html#transparency"
+                >Read more on the Principles page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-          <dt id="track-2"><strong>Track 2 (AI-Integrated / Open)</strong></dt>
-          <dd>Assessment where responsible use of AI is encouraged. These are less supervised, promoting engagement with AI and preparing students for an AI-integrated society. Acceptable usage is detailed in Assessment Briefs. <a href="integration.html#two-track">Read more on the AI Integration page</a>.</dd>
+        <!-- U -->
+        <section id="letter-u">
+          <h2>U</h2>
+          <dl class="glossary-list">
+            <dt id="universal-design-for-learning">
+              <strong>Universal Design for Learning (UDL)</strong>
+            </dt>
+            <dd>
+              A framework for designing inclusive educational experiences that
+              offer diverse ways for students to engage with content and
+              demonstrate their learning.
+              <a href="principles.html#accessibility"
+                >Read more on the Principles page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-          <dt id="transparency"><strong>Transparency</strong></dt>
-          <dd>Clearly communicating expectations around the purpose of assessment, criteria for success, and the extent to which AI use is permitted or restricted. One of the five core principles. <a href="principles.html#transparency">Read more on the Principles page</a>.</dd>
-        </dl>
-      </section>
+        <!-- V -->
+        <section id="letter-v">
+          <h2>V</h2>
+          <dl class="glossary-list">
+            <dt id="validity"><strong>Validity</strong></dt>
+            <dd>
+              The principle that assessment tasks genuinely measure the
+              knowledge, skills, and competencies they are intended to assess,
+              even in contexts where AI tools are widely available. The first
+              core principle.
+              <a href="principles.html#validity"
+                >Read more on the Principles page</a
+              >.
+            </dd>
+          </dl>
+        </section>
 
-      <!-- U -->
-      <section id="letter-u">
-        <h2>U</h2>
-        <dl class="glossary-list">
-          <dt id="universal-design-for-learning"><strong>Universal Design for Learning (UDL)</strong></dt>
-          <dd>A framework for designing inclusive educational experiences that offer diverse ways for students to engage with content and demonstrate their learning. <a href="principles.html#accessibility">Read more on the Principles page</a>.</dd>
-        </dl>
-      </section>
+        <!-- Page Navigation -->
+        <nav class="page-nav" aria-label="Page navigation">
+          <a href="resources.html" class="prev">
+            <span class="label">Previous</span>
+            <span class="title">Resources &amp; Tips</span>
+          </a>
+        </nav>
+      </div>
 
-      <!-- V -->
-      <section id="letter-v">
-        <h2>V</h2>
-        <dl class="glossary-list">
-          <dt id="validity"><strong>Validity</strong></dt>
-          <dd>The principle that assessment tasks genuinely measure the knowledge, skills, and competencies they are intended to assess, even in contexts where AI tools are widely available. The first core principle. <a href="principles.html#validity">Read more on the Principles page</a>.</dd>
-        </dl>
-      </section>
+      <!-- Sidebar -->
+      <aside class="page-sidebar">
+        <nav class="sidebar-nav" aria-label="On this page">
+          <h4>On This Page</h4>
+          <ul>
+            <li><a href="#letter-a">A</a></li>
+            <li><a href="#letter-b">B</a></li>
+            <li><a href="#letter-c">C</a></li>
+            <li><a href="#letter-d">D</a></li>
+            <li><a href="#letter-e">E</a></li>
+            <li><a href="#letter-f">F</a></li>
+            <li><a href="#letter-g">G</a></li>
+            <li><a href="#letter-h">H</a></li>
+            <li><a href="#letter-i">I</a></li>
+            <li><a href="#letter-l">L</a></li>
+            <li><a href="#letter-m">M</a></li>
+            <li><a href="#letter-o">O</a></li>
+            <li><a href="#letter-p">P</a></li>
+            <li><a href="#letter-q">Q</a></li>
+            <li><a href="#letter-r">R</a></li>
+            <li><a href="#letter-s">S</a></li>
+            <li><a href="#letter-t">T</a></li>
+            <li><a href="#letter-u">U</a></li>
+            <li><a href="#letter-v">V</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
 
-      <!-- Page Navigation -->
-      <nav class="page-nav" aria-label="Page navigation">
-        <a href="resources.html" class="prev">
-          <span class="label">Previous</span>
-          <span class="title">Resources &amp; Tips</span>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>Framework</h4>
+          <ul>
+            <li><a href="framework.html">Framework Overview</a></li>
+            <li><a href="principles.html">Core Principles</a></li>
+            <li><a href="risk-detection.html">Risk &amp; Detection</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Assessment</h4>
+          <ul>
+            <li><a href="integration.html">AI Integration</a></li>
+            <li><a href="agentic-ai.html">Agentic AI</a></li>
+            <li><a href="strategies.html">Design Strategies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="resources.html">Resources &amp; Tips</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="course/index.html">Course</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank"
+          rel="noopener"
+          class="footer-licence"
+        >
+          <img
+            src="https://licensebuttons.net/l/by-sa/4.0/88x31.png"
+            alt="CC BY-SA 4.0"
+          />
+          <span>CC BY-SA 4.0</span>
         </a>
-      </nav>
-
-    </div>
-
-    <!-- Sidebar -->
-    <aside class="page-sidebar">
-      <nav class="sidebar-nav" aria-label="On this page">
-        <h4>On This Page</h4>
-        <ul>
-          <li><a href="#letter-a">A</a></li>
-          <li><a href="#letter-b">B</a></li>
-          <li><a href="#letter-c">C</a></li>
-          <li><a href="#letter-d">D</a></li>
-          <li><a href="#letter-e">E</a></li>
-          <li><a href="#letter-f">F</a></li>
-          <li><a href="#letter-g">G</a></li>
-          <li><a href="#letter-h">H</a></li>
-          <li><a href="#letter-i">I</a></li>
-          <li><a href="#letter-l">L</a></li>
-          <li><a href="#letter-m">M</a></li>
-          <li><a href="#letter-o">O</a></li>
-          <li><a href="#letter-p">P</a></li>
-          <li><a href="#letter-q">Q</a></li>
-          <li><a href="#letter-r">R</a></li>
-          <li><a href="#letter-s">S</a></li>
-          <li><a href="#letter-t">T</a></li>
-          <li><a href="#letter-u">U</a></li>
-          <li><a href="#letter-v">V</a></li>
-        </ul>
-      </nav>
-    </aside>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <h4>Framework</h4>
-        <ul>
-          <li><a href="framework.html">Framework Overview</a></li>
-          <li><a href="principles.html">Core Principles</a></li>
-          <li><a href="risk-detection.html">Risk &amp; Detection</a></li>
-        </ul>
+        <p>
+          2026 Assessment Redesign Framework | Dr Hazel Farrell |
+          <a href="https://genain3.ie" target="_blank" rel="noopener"
+            >GenAI:N3</a
+          ><br />HTML version developed by Ken McCarthy using Claude Code
+        </p>
       </div>
-      <div class="footer-col">
-        <h4>Assessment</h4>
-        <ul>
-          <li><a href="integration.html">AI Integration</a></li>
-          <li><a href="agentic-ai.html">Agentic AI</a></li>
-          <li><a href="strategies.html">Design Strategies</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="quality.html">Quality Assurance</a></li>
-          <li><a href="resources.html">Resources &amp; Tips</a></li>
-          <li><a href="glossary.html">Glossary</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" class="footer-licence">
-        <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="CC BY-SA 4.0">
-        <span>CC BY-SA 4.0</span>
-      </a>
-      <p>2026 Assessment Redesign Framework | Dr Hazel Farrell | <a href="https://genain3.ie" target="_blank" rel="noopener">GenAI:N3</a><br>HTML version developed by Ken McCarthy using Claude Code</p>
-    </div>
-  </footer>
+    </footer>
 
-<script src="enhancements.js" defer></script>
-<script data-goatcounter="https://arf.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-</body>
+    <script src="enhancements.js" defer></script>
+    <script
+      data-goatcounter="https://arf.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
 </html>

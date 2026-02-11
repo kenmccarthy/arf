@@ -1,219 +1,332 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Core Principles of Assessment Redesign - Five guiding principles that safeguard academic standards while supporting meaningful learning.">
-  <meta name="author" content="Dr Hazel Farrell">
-  <title>Core Principles | 2026 Assessment Redesign Framework</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Core Principles of Assessment Redesign - Five guiding principles that safeguard academic standards while supporting meaningful learning."
+    />
+    <meta name="author" content="Dr Hazel Farrell" />
+    <title>Core Principles | 2026 Assessment Redesign Framework</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          onclick="document.querySelector('.main-nav').classList.toggle('open')"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <span class="mobile-title">2026 Assessment Redesign Framework</span>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="framework.html">Framework</a>
+          <a href="principles.html" class="active">Principles</a>
+          <a href="risk-detection.html">Risk &amp; Detection</a>
+          <a href="integration.html">AI Integration</a>
+          <a href="agentic-ai.html">Agentic AI</a>
+          <a href="strategies.html">Strategies</a>
+          <a href="quality.html">Quality</a>
+          <a href="resources.html">Resources</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="course/index.html">Course</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Site Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <span class="mobile-title">2026 Assessment Redesign Framework</span>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="framework.html">Framework</a>
-        <a href="principles.html" class="active">Principles</a>
-        <a href="risk-detection.html">Risk &amp; Detection</a>
-        <a href="integration.html">AI Integration</a>
-        <a href="agentic-ai.html">Agentic AI</a>
-        <a href="strategies.html">Strategies</a>
-        <a href="quality.html">Quality</a>
-        <a href="resources.html">Resources</a>
-        <a href="glossary.html">Glossary</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &gt; Core Principles
+        </nav>
+        <h1>Core Principles of Assessment Redesign</h1>
+        <p>
+          Five guiding principles that safeguard academic standards while
+          supporting meaningful learning.
+        </p>
+      </div>
+    </section>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a> &gt; Core Principles
-      </nav>
-      <h1>Core Principles of Assessment Redesign</h1>
-      <p>Five guiding principles that safeguard academic standards while supporting meaningful learning.</p>
-    </div>
-  </section>
+    <!-- Main Content -->
+    <main class="page-wrapper">
+      <div class="page-content">
+        <!-- Core Principles -->
+        <section id="core-principles">
+          <h2 class="mt-0">Core Principles</h2>
+          <p class="section-intro">
+            Assessment redesign should be guided by a clear set of educational
+            principles that safeguard academic standards while supporting
+            meaningful learning. Assessment should prioritise:
+          </p>
 
-  <!-- Main Content -->
-  <main class="page-wrapper">
-    <div class="page-content">
-
-      <!-- Core Principles -->
-      <section id="core-principles">
-        <h2 class="mt-0">Core Principles</h2>
-        <p class="section-intro">Assessment redesign should be guided by a clear set of educational principles that safeguard academic standards while supporting meaningful learning. Assessment should prioritise:</p>
-
-        <!-- Principle 1: Validity -->
-        <div class="principle-card" id="validity">
-          <h3><span class="principle-number">1</span> Validity</h3>
-          <p>Ensuring that assessment tasks genuinely measure the knowledge, skills, and competencies they are intended to assess, even in contexts where AI tools are widely available.</p>
-        </div>
-
-        <!-- Principle 2: Fairness and Equity -->
-        <div class="principle-card" id="fairness">
-          <h3><span class="principle-number">2</span> Fairness and Equity</h3>
-          <p>Recognising differences in access to technology, levels of AI literacy, language background, and learning needs, and designing assessment that does not disadvantage particular groups of students.</p>
-        </div>
-
-        <!-- Principle 3: Transparency -->
-        <div class="principle-card" id="transparency">
-          <h3><span class="principle-number">3</span> Transparency</h3>
-          <p>Clearly communicating expectations around the purpose of assessment, criteria for success, and the extent to which AI use is permitted or restricted.</p>
-        </div>
-
-        <!-- Principle 4: Accessibility and Inclusion -->
-        <div class="principle-card" id="accessibility">
-          <h3><span class="principle-number">4</span> Accessibility and Inclusion</h3>
-          <p>Aligning assessment design with Universal Design for Learning (UDL) principles and offering diverse ways for students to demonstrate their learning.</p>
-        </div>
-
-        <!-- Principle 5: Alignment with Learning Outcomes -->
-        <div class="principle-card" id="alignment">
-          <h3><span class="principle-number">5</span> Alignment with Learning Outcomes</h3>
-          <p>Ensuring that decisions about assessment format, level of supervision, and AI use are driven by what students are expected to know, understand, and be able to do.</p>
-        </div>
-      </section>
-
-      <!-- In Practice -->
-      <section id="in-practice">
-        <h2>In Practice</h2>
-        <p>In practice, this means placing greater emphasis on:</p>
-        <ul>
-          <li>Higher-order thinking skills, including analysis, evaluation, synthesis, and creation</li>
-          <li>Authentic application of knowledge in realistic or discipline-relevant contexts</li>
-          <li>Demonstration of reasoning processes, not just final products</li>
-        </ul>
-        <p>Educators should critically consider whether the use of GenAI in a given assessment supports or undermines the intended learning outcomes. Where AI use is appropriate, expectations should be explicit and supported through the development of student AI literacy. Where independent performance is required, this should be clearly justified and communicated.</p>
-
-        <div class="callout callout-success">
-          <p>Together, these principles ensure that assessment redesign remains pedagogically grounded, ethically informed, and responsive to the realities of learning in a world where AI continues to become increasingly prevalent.</p>
-        </div>
-      </section>
-
-      <!-- AI Literacy -->
-      <section id="ai-literacy">
-        <h2>AI Literacy</h2>
-        <p>Assessment redesign and AI literacy are intrinsically linked. As GenAI becomes embedded in learning, work, and everyday life, students need more than technical familiarity with tools — they need the capacity to engage with AI critically, ethically, and effectively.</p>
-
-        <p>AI literacy includes the ability to:</p>
-        <ul>
-          <li>Critically evaluate AI outputs, recognising inaccuracies, bias, hallucinations, and limitations</li>
-          <li>Understand how and when AI can be appropriately used, and when independent thinking or professional judgement is required</li>
-          <li>Use AI ethically and transparently, including disclosure of use and respect for academic integrity and data privacy</li>
-          <li>Integrate AI as a support for thinking, problem-solving, and creativity — not as a substitute for learning</li>
-          <li>Recognise the role of the human in the learning process</li>
-          <li>Understand how AI may influence thinking, behaviour, and decision-making</li>
-        </ul>
-
-        <p>At programme level, teams should determine:</p>
-        <ul>
-          <li>Where AI literacy is an explicit learning outcome</li>
-          <li>Where AI literacy contributes to broader graduate attributes</li>
-          <li>Where foundational disciplinary knowledge must be demonstrated independently of AI support</li>
-        </ul>
-
-        <p>Assessment design should therefore include a deliberate mix of:</p>
-        <div class="track-comparison">
-          <div class="track-box track1">
-            <h3>AI-Restricted Tasks</h3>
-            <p>Where independent demonstration of knowledge, understanding, or professional capability is required</p>
+          <!-- Principle 1: Validity -->
+          <div class="principle-card" id="validity">
+            <h3><span class="principle-number">1</span> Validity</h3>
+            <p>
+              Ensuring that assessment tasks genuinely measure the knowledge,
+              skills, and competencies they are intended to assess, even in
+              contexts where AI tools are widely available.
+            </p>
           </div>
-          <div class="track-box track2">
-            <h3>AI-Supported Tasks</h3>
-            <p>Where students are expected to engage with AI tools critically and responsibly as part of the learning process</p>
+
+          <!-- Principle 2: Fairness and Equity -->
+          <div class="principle-card" id="fairness">
+            <h3><span class="principle-number">2</span> Fairness and Equity</h3>
+            <p>
+              Recognising differences in access to technology, levels of AI
+              literacy, language background, and learning needs, and designing
+              assessment that does not disadvantage particular groups of
+              students.
+            </p>
           </div>
+
+          <!-- Principle 3: Transparency -->
+          <div class="principle-card" id="transparency">
+            <h3><span class="principle-number">3</span> Transparency</h3>
+            <p>
+              Clearly communicating expectations around the purpose of
+              assessment, criteria for success, and the extent to which AI use
+              is permitted or restricted.
+            </p>
+          </div>
+
+          <!-- Principle 4: Accessibility and Inclusion -->
+          <div class="principle-card" id="accessibility">
+            <h3>
+              <span class="principle-number">4</span> Accessibility and
+              Inclusion
+            </h3>
+            <p>
+              Aligning assessment design with Universal Design for Learning
+              (UDL) principles and offering diverse ways for students to
+              demonstrate their learning.
+            </p>
+          </div>
+
+          <!-- Principle 5: Alignment with Learning Outcomes -->
+          <div class="principle-card" id="alignment">
+            <h3>
+              <span class="principle-number">5</span> Alignment with Learning
+              Outcomes
+            </h3>
+            <p>
+              Ensuring that decisions about assessment format, level of
+              supervision, and AI use are driven by what students are expected
+              to know, understand, and be able to do.
+            </p>
+          </div>
+        </section>
+
+        <!-- In Practice -->
+        <section id="in-practice">
+          <h2>In Practice</h2>
+          <p>In practice, this means placing greater emphasis on:</p>
+          <ul>
+            <li>
+              Higher-order thinking skills, including analysis, evaluation,
+              synthesis, and creation
+            </li>
+            <li>
+              Authentic application of knowledge in realistic or
+              discipline-relevant contexts
+            </li>
+            <li>
+              Demonstration of reasoning processes, not just final products
+            </li>
+          </ul>
+          <p>
+            Educators should critically consider whether the use of GenAI in a
+            given assessment supports or undermines the intended learning
+            outcomes. Where AI use is appropriate, expectations should be
+            explicit and supported through the development of student AI
+            literacy. Where independent performance is required, this should be
+            clearly justified and communicated.
+          </p>
+
+          <div class="callout callout-success">
+            <p>
+              Together, these principles ensure that assessment redesign remains
+              pedagogically grounded, ethically informed, and responsive to the
+              realities of learning in a world where AI continues to become
+              increasingly prevalent.
+            </p>
+          </div>
+        </section>
+
+        <!-- AI Literacy -->
+        <section id="ai-literacy">
+          <h2>AI Literacy</h2>
+          <p>
+            Assessment redesign and AI literacy are intrinsically linked. As
+            GenAI becomes embedded in learning, work, and everyday life,
+            students need more than technical familiarity with tools — they need
+            the capacity to engage with AI critically, ethically, and
+            effectively.
+          </p>
+
+          <p>AI literacy includes the ability to:</p>
+          <ul>
+            <li>
+              Critically evaluate AI outputs, recognising inaccuracies, bias,
+              hallucinations, and limitations
+            </li>
+            <li>
+              Understand how and when AI can be appropriately used, and when
+              independent thinking or professional judgement is required
+            </li>
+            <li>
+              Use AI ethically and transparently, including disclosure of use
+              and respect for academic integrity and data privacy
+            </li>
+            <li>
+              Integrate AI as a support for thinking, problem-solving, and
+              creativity — not as a substitute for learning
+            </li>
+            <li>Recognise the role of the human in the learning process</li>
+            <li>
+              Understand how AI may influence thinking, behaviour, and
+              decision-making
+            </li>
+          </ul>
+
+          <p>At programme level, teams should determine:</p>
+          <ul>
+            <li>Where AI literacy is an explicit learning outcome</li>
+            <li>
+              Where AI literacy contributes to broader graduate attributes
+            </li>
+            <li>
+              Where foundational disciplinary knowledge must be demonstrated
+              independently of AI support
+            </li>
+          </ul>
+
+          <p>Assessment design should therefore include a deliberate mix of:</p>
+          <div class="track-comparison">
+            <div class="track-box track1">
+              <h3>AI-Restricted Tasks</h3>
+              <p>
+                Where independent demonstration of knowledge, understanding, or
+                professional capability is required
+              </p>
+            </div>
+            <div class="track-box track2">
+              <h3>AI-Supported Tasks</h3>
+              <p>
+                Where students are expected to engage with AI tools critically
+                and responsibly as part of the learning process
+              </p>
+            </div>
+          </div>
+
+          <div class="callout callout-important">
+            <p>
+              Assessment redesign is therefore not only about preventing misuse,
+              but about educating students to become informed, critical, and
+              responsible participants in this rapidly changing technological
+              world.
+            </p>
+          </div>
+        </section>
+
+        <!-- Page Navigation -->
+        <nav class="page-nav" aria-label="Page navigation">
+          <a href="framework.html" class="prev">
+            <span class="label">Previous</span>
+            <span class="title">Framework</span>
+          </a>
+          <a href="risk-detection.html" class="next">
+            <span class="label">Next</span>
+            <span class="title">Risk &amp; Detection</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="page-sidebar">
+        <nav class="sidebar-nav" aria-label="On this page">
+          <h4>On This Page</h4>
+          <ul>
+            <li><a href="#core-principles">Core Principles</a></li>
+            <li><a href="#validity">Validity</a></li>
+            <li><a href="#fairness">Fairness &amp; Equity</a></li>
+            <li><a href="#transparency">Transparency</a></li>
+            <li><a href="#accessibility">Accessibility &amp; Inclusion</a></li>
+            <li><a href="#alignment">Alignment</a></li>
+            <li><a href="#in-practice">In Practice</a></li>
+            <li><a href="#ai-literacy">AI Literacy</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>Framework</h4>
+          <ul>
+            <li><a href="framework.html">Framework Overview</a></li>
+            <li><a href="principles.html">Core Principles</a></li>
+            <li><a href="risk-detection.html">Risk &amp; Detection</a></li>
+          </ul>
         </div>
-
-        <div class="callout callout-important">
-          <p>Assessment redesign is therefore not only about preventing misuse, but about educating students to become informed, critical, and responsible participants in this rapidly changing technological world.</p>
+        <div class="footer-col">
+          <h4>Assessment</h4>
+          <ul>
+            <li><a href="integration.html">AI Integration</a></li>
+            <li><a href="agentic-ai.html">Agentic AI</a></li>
+            <li><a href="strategies.html">Design Strategies</a></li>
+          </ul>
         </div>
-      </section>
-
-      <!-- Page Navigation -->
-      <nav class="page-nav" aria-label="Page navigation">
-        <a href="framework.html" class="prev">
-          <span class="label">Previous</span>
-          <span class="title">Framework</span>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="resources.html">Resources &amp; Tips</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="course/index.html">Course</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank"
+          rel="noopener"
+          class="footer-licence"
+        >
+          <img
+            src="https://licensebuttons.net/l/by-sa/4.0/88x31.png"
+            alt="CC BY-SA 4.0"
+          />
+          <span>CC BY-SA 4.0</span>
         </a>
-        <a href="risk-detection.html" class="next">
-          <span class="label">Next</span>
-          <span class="title">Risk &amp; Detection</span>
-        </a>
-      </nav>
-
-    </div>
-
-    <!-- Sidebar -->
-    <aside class="page-sidebar">
-      <nav class="sidebar-nav" aria-label="On this page">
-        <h4>On This Page</h4>
-        <ul>
-          <li><a href="#core-principles">Core Principles</a></li>
-          <li><a href="#validity">Validity</a></li>
-          <li><a href="#fairness">Fairness &amp; Equity</a></li>
-          <li><a href="#transparency">Transparency</a></li>
-          <li><a href="#accessibility">Accessibility &amp; Inclusion</a></li>
-          <li><a href="#alignment">Alignment</a></li>
-          <li><a href="#in-practice">In Practice</a></li>
-          <li><a href="#ai-literacy">AI Literacy</a></li>
-        </ul>
-      </nav>
-    </aside>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <h4>Framework</h4>
-        <ul>
-          <li><a href="framework.html">Framework Overview</a></li>
-          <li><a href="principles.html">Core Principles</a></li>
-          <li><a href="risk-detection.html">Risk &amp; Detection</a></li>
-        </ul>
+        <p>
+          2026 Assessment Redesign Framework | Dr Hazel Farrell |
+          <a href="https://genain3.ie" target="_blank" rel="noopener"
+            >GenAI:N3</a
+          ><br />HTML version developed by Ken McCarthy using Claude Code
+        </p>
       </div>
-      <div class="footer-col">
-        <h4>Assessment</h4>
-        <ul>
-          <li><a href="integration.html">AI Integration</a></li>
-          <li><a href="agentic-ai.html">Agentic AI</a></li>
-          <li><a href="strategies.html">Design Strategies</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="quality.html">Quality Assurance</a></li>
-          <li><a href="resources.html">Resources &amp; Tips</a></li>
-          <li><a href="glossary.html">Glossary</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" class="footer-licence">
-        <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="CC BY-SA 4.0">
-        <span>CC BY-SA 4.0</span>
-      </a>
-      <p>2026 Assessment Redesign Framework | Dr Hazel Farrell | <a href="https://genain3.ie" target="_blank" rel="noopener">GenAI:N3</a><br>HTML version developed by Ken McCarthy using Claude Code</p>
-    </div>
-  </footer>
+    </footer>
 
-<script src="enhancements.js" defer></script>
-<script data-goatcounter="https://arf.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-</body>
+    <script src="enhancements.js" defer></script>
+    <script
+      data-goatcounter="https://arf.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
 </html>

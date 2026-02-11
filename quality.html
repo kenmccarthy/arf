@@ -1,262 +1,465 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Quality Assurance & Programme-Level Alignment - Embedding assessment redesign into institutional quality processes and programme coordination.">
-  <meta name="author" content="Dr Hazel Farrell">
-  <title>Quality Assurance | 2026 Assessment Redesign Framework</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Quality Assurance & Programme-Level Alignment - Embedding assessment redesign into institutional quality processes and programme coordination."
+    />
+    <meta name="author" content="Dr Hazel Farrell" />
+    <title>Quality Assurance | 2026 Assessment Redesign Framework</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          onclick="document.querySelector('.main-nav').classList.toggle('open')"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <span class="mobile-title">2026 Assessment Redesign Framework</span>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="framework.html">Framework</a>
+          <a href="principles.html">Principles</a>
+          <a href="risk-detection.html">Risk &amp; Detection</a>
+          <a href="integration.html">AI Integration</a>
+          <a href="agentic-ai.html">Agentic AI</a>
+          <a href="strategies.html">Strategies</a>
+          <a href="quality.html" class="active">Quality</a>
+          <a href="resources.html">Resources</a>
+          <a href="glossary.html">Glossary</a>
+          <a href="course/index.html">Course</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Site Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('open')">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <span class="mobile-title">2026 Assessment Redesign Framework</span>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="framework.html">Framework</a>
-        <a href="principles.html">Principles</a>
-        <a href="risk-detection.html">Risk &amp; Detection</a>
-        <a href="integration.html">AI Integration</a>
-        <a href="agentic-ai.html">Agentic AI</a>
-        <a href="strategies.html">Strategies</a>
-        <a href="quality.html" class="active">Quality</a>
-        <a href="resources.html">Resources</a>
-        <a href="glossary.html">Glossary</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &gt; Quality Assurance
+        </nav>
+        <h1>Quality Assurance &amp; Programme-Level Alignment</h1>
+        <p>
+          Embedding assessment redesign into institutional quality processes and
+          programme coordination.
+        </p>
+      </div>
+    </section>
 
-  <!-- Page Hero -->
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a> &gt; Quality Assurance
-      </nav>
-      <h1>Quality Assurance &amp; Programme-Level Alignment</h1>
-      <p>Embedding assessment redesign into institutional quality processes and programme coordination.</p>
-    </div>
-  </section>
+    <!-- Main Content -->
+    <main class="page-wrapper">
+      <div class="page-content">
+        <p class="section-intro">
+          Assessment redesign in response to GenAI cannot be addressed solely at
+          the level of individual modules. To ensure fairness, coherence, and
+          academic standards, assessment strategy must be considered
+          holistically at programme level and embedded within existing quality
+          assurance processes.
+        </p>
 
-  <!-- Main Content -->
-  <main class="page-wrapper">
-    <div class="page-content">
+        <!-- 1. Programme-Level Assessment Mapping -->
+        <section id="programme-mapping">
+          <h2>1. Programme-Level Assessment Mapping</h2>
+          <p>
+            Programme teams should review assessment patterns across all stages
+            to ensure a balanced and purposeful mix of assessment types. This
+            includes:
+          </p>
+          <ul>
+            <li>
+              A combination of AI-restricted assessments (where independent
+              knowledge, foundational skills, or professional competencies must
+              be demonstrated without AI support)
+            </li>
+            <li>
+              AI-integrated assessments (where responsible use of AI is aligned
+              with learning outcomes and mirrors authentic professional
+              practice)
+            </li>
+            <li>
+              Increasing emphasis on process-based and staged assessments that
+              make learning visible over time
+            </li>
+          </ul>
 
-      <p class="section-intro">Assessment redesign in response to GenAI cannot be addressed solely at the level of individual modules. To ensure fairness, coherence, and academic standards, assessment strategy must be considered holistically at programme level and embedded within existing quality assurance processes.</p>
+          <p>This mapping helps avoid:</p>
+          <ul>
+            <li>
+              Over-reliance on a single vulnerable format (e.g., multiple long
+              essays)
+            </li>
+            <li>Inconsistent expectations around AI use between modules</li>
+            <li>Unintended clustering of high-stakes, high-risk assessments</li>
+          </ul>
 
-      <!-- 1. Programme-Level Assessment Mapping -->
-      <section id="programme-mapping">
-        <h2>1. Programme-Level Assessment Mapping</h2>
-        <p>Programme teams should review assessment patterns across all stages to ensure a balanced and purposeful mix of assessment types. This includes:</p>
-        <ul>
-          <li>A combination of AI-restricted assessments (where independent knowledge, foundational skills, or professional competencies must be demonstrated without AI support)</li>
-          <li>AI-integrated assessments (where responsible use of AI is aligned with learning outcomes and mirrors authentic professional practice)</li>
-          <li>Increasing emphasis on process-based and staged assessments that make learning visible over time</li>
-        </ul>
+          <div class="callout callout-info">
+            <p>
+              Programme-level planning ensures that students experience a
+              coherent assessment journey, rather than a collection of
+              disconnected module-level decisions.
+            </p>
+          </div>
+        </section>
 
-        <p>This mapping helps avoid:</p>
-        <ul>
-          <li>Over-reliance on a single vulnerable format (e.g., multiple long essays)</li>
-          <li>Inconsistent expectations around AI use between modules</li>
-          <li>Unintended clustering of high-stakes, high-risk assessments</li>
-        </ul>
+        <!-- 2. Alignment with Learning Outcomes and Graduate Attributes -->
+        <section id="learning-outcomes">
+          <h2>2. Alignment with Learning Outcomes and Graduate Attributes</h2>
+          <p>
+            Assessment redesign must remain in alignment with programme learning
+            outcomes and graduate attributes, including emerging expectations
+            around AI literacy.
+          </p>
 
-        <div class="callout callout-info">
-          <p>Programme-level planning ensures that students experience a coherent assessment journey, rather than a collection of disconnected module-level decisions.</p>
+          <p>Programme teams should consider:</p>
+          <ul>
+            <li>Where AI literacy is an explicit programme outcome</li>
+            <li>
+              Where AI literacy supports broader attributes such as critical
+              thinking, ethical reasoning, and digital competence
+            </li>
+            <li>
+              Where certain competencies (e.g., clinical judgment, foundational
+              theory, professional standards) must be demonstrated without AI
+              mediation
+            </li>
+          </ul>
+
+          <p>
+            This ensures that decisions about AI use in assessment are
+            pedagogically driven, rather than reactive or technology-led.
+          </p>
+        </section>
+
+        <!-- 3. Consistency, Transparency, and Student Experience -->
+        <section id="consistency">
+          <h2>3. Consistency, Transparency, and Student Experience</h2>
+          <p>
+            From a quality perspective, students should encounter clear and
+            consistent messaging about AI use across their programme.
+          </p>
+
+          <p>This includes:</p>
+          <ul>
+            <li>
+              Shared programme-level language for describing levels of permitted
+              AI use
+            </li>
+            <li>
+              Clear explanation of the rationale for AI-restricted vs
+              AI-integrated tasks
+            </li>
+            <li>
+              Opportunities for students to develop the skills needed to engage
+              ethically and effectively with AI before being assessed on them
+            </li>
+          </ul>
+
+          <div class="callout callout-warning">
+            <p>
+              Inconsistent practices between modules can create confusion,
+              inequity, and perceptions of unfairness. Programme-level
+              coordination supports a transparent and supportive assessment
+              culture.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4. Embedding Assessment Redesign into Quality Processes -->
+        <section id="quality-processes">
+          <h2>4. Embedding Assessment Redesign into Quality Processes</h2>
+          <p>
+            Assessment redesign should be incorporated into existing quality
+            assurance and enhancement structures, such as:
+          </p>
+          <ul>
+            <li>Programme review and revalidation processes</li>
+            <li>Annual monitoring and reporting</li>
+            <li>
+              External examiner discussions on assessment standards and
+              authenticity
+            </li>
+            <li>Curriculum design and approval workflows</li>
+          </ul>
+
+          <div class="callout callout-important">
+            <p>
+              Rather than being treated as an emergency or temporary measure,
+              AI-responsive assessment should be recognised as part of ongoing
+              curriculum enhancement in a changing technological landscape.
+            </p>
+          </div>
+        </section>
+
+        <!-- 5. Supporting Staff Through Structured Programme Approaches -->
+        <section id="supporting-staff">
+          <h2>5. Supporting Staff Through Structured Programme Approaches</h2>
+          <p>
+            Programme-level coordination also reduces the burden on individual
+            lecturers by:
+          </p>
+          <ul>
+            <li>Encouraging shared design approaches</li>
+            <li>Facilitating cross-module collaboration</li>
+            <li>
+              Enabling collective decisions about where AI-restricted assessment
+              is most appropriate
+            </li>
+            <li>
+              Sharing effective practices in process-focused and authentic
+              assessment
+            </li>
+          </ul>
+
+          <p>
+            This creates a more sustainable model of change and helps ensure
+            that assessment redesign enhances learning, rather than simply
+            increasing staff workload.
+          </p>
+        </section>
+
+        <!-- Time Investment -->
+        <section id="time-investment">
+          <h2>Time Investment</h2>
+          <p>
+            A valid consideration in assessment redesign is balancing the amount
+            of time and effort educators will need to invest in this process
+            versus the level of impact on the learning experience.
+          </p>
+
+          <p>
+            Virmani and Lau address this in their
+            <a
+              href="https://thesedablog.wordpress.com/2024/06/27/balancing-impact-and-time-a-strategy-for-adapting-assessments-in-the-age-of-genai/"
+              target="_blank"
+              rel="noopener"
+              >SEDA blog (June 2024)</a
+            >
+            and offer the following as a starting point for discussion:
+          </p>
+
+          <figure style="margin: var(--space-xl) 0; text-align: center">
+            <img
+              src="images/virmani-lau-impact.jpg"
+              alt="Time versus Impact chart by Virmani and Lau showing various assessment modification strategies plotted on axes of Time/Effort (vertical) and Impact on students' learning (horizontal). The ideal zone is high impact, lower time."
+              style="
+                max-width: 100%;
+                border-radius: var(--radius-md);
+                border: 1px solid var(--color-border);
+              "
+            />
+            <figcaption
+              style="
+                margin-top: var(--space-sm);
+                font-size: 0.85rem;
+                color: var(--color-text-muted);
+              "
+            >
+              Balancing Impact and Time — Virmani &amp; Lau, The SEDA Blog (June
+              2024)
+            </figcaption>
+          </figure>
+
+          <div class="callout callout-info">
+            <h4>Horizontal Axis (Impact)</h4>
+            <p>
+              Measures the degree to which an assessment format influences
+              positive changes in student learning outcomes.
+            </p>
+          </div>
+
+          <div class="callout callout-info">
+            <h4>Vertical Axis (Time)</h4>
+            <p>
+              Indicates roughly how much time and effort educators would invest
+              in modifying or redesigning a particular assessment format.
+            </p>
+          </div>
+
+          <div class="callout callout-success">
+            <h4>Ideal Zone</h4>
+            <p>
+              High in impact yet lower in the time required for modification —
+              techniques that balance efficiency with effectiveness.
+            </p>
+          </div>
+
+          <p>
+            Exploring assessment approaches that deter cheating in the first
+            place rather than focusing on detection after the fact, can be
+            useful in terms of saving time. However, there is no single
+            'perfect' solution, and the most effective approach will depend on
+            your specific context, learning objectives, and available resources.
+          </p>
+        </section>
+
+        <!-- Institutional and Wider Supports -->
+        <section id="institutional-supports">
+          <h2>Institutional and Wider Supports</h2>
+          <p>
+            Sustainable assessment redesign in the age of GenAI cannot rely on
+            individual educators working in isolation. Institutions have a
+            responsibility to create the conditions that enable valid, fair, and
+            future-facing assessment practices.
+          </p>
+
+          <p>At institutional level, educators should be supported through:</p>
+          <ul>
+            <li>
+              Structured professional development in AI literacy, assessment
+              redesign, and ethical AI use
+            </li>
+            <li>
+              Facilitated cross-disciplinary dialogue to share practice, align
+              approaches, and reduce duplication of effort
+            </li>
+            <li>
+              Development of unified institutional guidance on AI use in
+              learning, teaching, and assessment
+            </li>
+            <li>
+              Accessible repositories of assessment exemplars and resources to
+              support redesign efforts
+            </li>
+            <li>
+              Agile curriculum processes that allow timely updating of
+              assessment strategies
+            </li>
+          </ul>
+
+          <p>
+            Clear, practical AI policies and guidelines are essential, not only
+            to define acceptable use but to promote transparency, fairness, and
+            consistency across programmes.
+          </p>
+
+          <p>
+            Beyond individual institutions, engagement with the national and
+            international conversation around assessment and AI is equally
+            important. Sectoral initiatives such as
+            <a
+              href="https://www.qqi.ie/what-we-do/engagement-insights-and-knowledge-sharing/rethinking-assessment"
+              target="_blank"
+              rel="noopener"
+              >QQI's Rethinking Assessment</a
+            >, the academic integrity work of
+            <a
+              href="https://www.qqi.ie/what-we-do/engagement-insights-and-knowledge-sharing/national-academic-integrity-network"
+              target="_blank"
+              rel="noopener"
+              >NAIN</a
+            >, and national coordination through the
+            <a
+              href="https://www.teachingandlearning.ie/"
+              target="_blank"
+              rel="noopener"
+              >National Forum for the Enhancement of Teaching and Learning in
+              Higher Education</a
+            >
+            demonstrate a growing shared commitment to evolving assessment in
+            responsible and evidence-informed ways.
+          </p>
+        </section>
+
+        <!-- Page Navigation -->
+        <nav class="page-nav" aria-label="Page navigation">
+          <a href="strategies.html" class="prev">
+            <span class="label">Previous</span>
+            <span class="title">Design Strategies</span>
+          </a>
+          <a href="resources.html" class="next">
+            <span class="label">Next</span>
+            <span class="title">Resources &amp; Tips</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="page-sidebar">
+        <nav class="sidebar-nav" aria-label="On this page">
+          <h4>On This Page</h4>
+          <ul>
+            <li><a href="#programme-mapping">Programme-Level Mapping</a></li>
+            <li><a href="#learning-outcomes">Learning Outcomes</a></li>
+            <li><a href="#consistency">Consistency &amp; Transparency</a></li>
+            <li><a href="#quality-processes">Quality Processes</a></li>
+            <li><a href="#supporting-staff">Supporting Staff</a></li>
+            <li><a href="#time-investment">Time Investment</a></li>
+            <li>
+              <a href="#institutional-supports">Institutional Supports</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-col">
+          <h4>Framework</h4>
+          <ul>
+            <li><a href="framework.html">Framework Overview</a></li>
+            <li><a href="principles.html">Core Principles</a></li>
+            <li><a href="risk-detection.html">Risk &amp; Detection</a></li>
+          </ul>
         </div>
-      </section>
-
-      <!-- 2. Alignment with Learning Outcomes and Graduate Attributes -->
-      <section id="learning-outcomes">
-        <h2>2. Alignment with Learning Outcomes and Graduate Attributes</h2>
-        <p>Assessment redesign must remain in alignment with programme learning outcomes and graduate attributes, including emerging expectations around AI literacy.</p>
-
-        <p>Programme teams should consider:</p>
-        <ul>
-          <li>Where AI literacy is an explicit programme outcome</li>
-          <li>Where AI literacy supports broader attributes such as critical thinking, ethical reasoning, and digital competence</li>
-          <li>Where certain competencies (e.g., clinical judgment, foundational theory, professional standards) must be demonstrated without AI mediation</li>
-        </ul>
-
-        <p>This ensures that decisions about AI use in assessment are pedagogically driven, rather than reactive or technology-led.</p>
-      </section>
-
-      <!-- 3. Consistency, Transparency, and Student Experience -->
-      <section id="consistency">
-        <h2>3. Consistency, Transparency, and Student Experience</h2>
-        <p>From a quality perspective, students should encounter clear and consistent messaging about AI use across their programme.</p>
-
-        <p>This includes:</p>
-        <ul>
-          <li>Shared programme-level language for describing levels of permitted AI use</li>
-          <li>Clear explanation of the rationale for AI-restricted vs AI-integrated tasks</li>
-          <li>Opportunities for students to develop the skills needed to engage ethically and effectively with AI before being assessed on them</li>
-        </ul>
-
-        <div class="callout callout-warning">
-          <p>Inconsistent practices between modules can create confusion, inequity, and perceptions of unfairness. Programme-level coordination supports a transparent and supportive assessment culture.</p>
+        <div class="footer-col">
+          <h4>Assessment</h4>
+          <ul>
+            <li><a href="integration.html">AI Integration</a></li>
+            <li><a href="agentic-ai.html">Agentic AI</a></li>
+            <li><a href="strategies.html">Design Strategies</a></li>
+          </ul>
         </div>
-      </section>
-
-      <!-- 4. Embedding Assessment Redesign into Quality Processes -->
-      <section id="quality-processes">
-        <h2>4. Embedding Assessment Redesign into Quality Processes</h2>
-        <p>Assessment redesign should be incorporated into existing quality assurance and enhancement structures, such as:</p>
-        <ul>
-          <li>Programme review and revalidation processes</li>
-          <li>Annual monitoring and reporting</li>
-          <li>External examiner discussions on assessment standards and authenticity</li>
-          <li>Curriculum design and approval workflows</li>
-        </ul>
-
-        <div class="callout callout-important">
-          <p>Rather than being treated as an emergency or temporary measure, AI-responsive assessment should be recognised as part of ongoing curriculum enhancement in a changing technological landscape.</p>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="resources.html">Resources &amp; Tips</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="course/index.html">Course</a></li>
+          </ul>
         </div>
-      </section>
-
-      <!-- 5. Supporting Staff Through Structured Programme Approaches -->
-      <section id="supporting-staff">
-        <h2>5. Supporting Staff Through Structured Programme Approaches</h2>
-        <p>Programme-level coordination also reduces the burden on individual lecturers by:</p>
-        <ul>
-          <li>Encouraging shared design approaches</li>
-          <li>Facilitating cross-module collaboration</li>
-          <li>Enabling collective decisions about where AI-restricted assessment is most appropriate</li>
-          <li>Sharing effective practices in process-focused and authentic assessment</li>
-        </ul>
-
-        <p>This creates a more sustainable model of change and helps ensure that assessment redesign enhances learning, rather than simply increasing staff workload.</p>
-      </section>
-
-      <!-- Time Investment -->
-      <section id="time-investment">
-        <h2>Time Investment</h2>
-        <p>A valid consideration in assessment redesign is balancing the amount of time and effort educators will need to invest in this process versus the level of impact on the learning experience.</p>
-
-        <p>Virmani and Lau address this in their <a href="https://thesedablog.wordpress.com/2024/06/27/balancing-impact-and-time-a-strategy-for-adapting-assessments-in-the-age-of-genai/" target="_blank" rel="noopener">SEDA blog (June 2024)</a> and offer the following as a starting point for discussion:</p>
-
-        <figure style="margin: var(--space-xl) 0; text-align: center;">
-          <img src="images/virmani-lau-impact.jpg" alt="Time versus Impact chart by Virmani and Lau showing various assessment modification strategies plotted on axes of Time/Effort (vertical) and Impact on students' learning (horizontal). The ideal zone is high impact, lower time." style="max-width: 100%; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
-          <figcaption style="margin-top: var(--space-sm); font-size: 0.85rem; color: var(--color-text-muted);">Balancing Impact and Time — Virmani &amp; Lau, The SEDA Blog (June 2024)</figcaption>
-        </figure>
-
-        <div class="callout callout-info">
-          <h4>Horizontal Axis (Impact)</h4>
-          <p>Measures the degree to which an assessment format influences positive changes in student learning outcomes.</p>
-        </div>
-
-        <div class="callout callout-info">
-          <h4>Vertical Axis (Time)</h4>
-          <p>Indicates roughly how much time and effort educators would invest in modifying or redesigning a particular assessment format.</p>
-        </div>
-
-        <div class="callout callout-success">
-          <h4>Ideal Zone</h4>
-          <p>High in impact yet lower in the time required for modification — techniques that balance efficiency with effectiveness.</p>
-        </div>
-
-        <p>Exploring assessment approaches that deter cheating in the first place rather than focusing on detection after the fact, can be useful in terms of saving time. However, there is no single 'perfect' solution, and the most effective approach will depend on your specific context, learning objectives, and available resources.</p>
-      </section>
-
-      <!-- Institutional and Wider Supports -->
-      <section id="institutional-supports">
-        <h2>Institutional and Wider Supports</h2>
-        <p>Sustainable assessment redesign in the age of GenAI cannot rely on individual educators working in isolation. Institutions have a responsibility to create the conditions that enable valid, fair, and future-facing assessment practices.</p>
-
-        <p>At institutional level, educators should be supported through:</p>
-        <ul>
-          <li>Structured professional development in AI literacy, assessment redesign, and ethical AI use</li>
-          <li>Facilitated cross-disciplinary dialogue to share practice, align approaches, and reduce duplication of effort</li>
-          <li>Development of unified institutional guidance on AI use in learning, teaching, and assessment</li>
-          <li>Accessible repositories of assessment exemplars and resources to support redesign efforts</li>
-          <li>Agile curriculum processes that allow timely updating of assessment strategies</li>
-        </ul>
-
-        <p>Clear, practical AI policies and guidelines are essential, not only to define acceptable use but to promote transparency, fairness, and consistency across programmes.</p>
-
-        <p>Beyond individual institutions, engagement with the national and international conversation around assessment and AI is equally important. Sectoral initiatives such as <a href="https://www.qqi.ie/what-we-do/engagement-insights-and-knowledge-sharing/rethinking-assessment" target="_blank" rel="noopener">QQI's Rethinking Assessment</a>, the academic integrity work of <a href="https://www.qqi.ie/what-we-do/engagement-insights-and-knowledge-sharing/national-academic-integrity-network" target="_blank" rel="noopener">NAIN</a>, and national coordination through the <a href="https://www.teachingandlearning.ie/" target="_blank" rel="noopener">National Forum for the Enhancement of Teaching and Learning in Higher Education</a> demonstrate a growing shared commitment to evolving assessment in responsible and evidence-informed ways.</p>
-      </section>
-
-      <!-- Page Navigation -->
-      <nav class="page-nav" aria-label="Page navigation">
-        <a href="strategies.html" class="prev">
-          <span class="label">Previous</span>
-          <span class="title">Design Strategies</span>
+      </div>
+      <div class="footer-bottom">
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank"
+          rel="noopener"
+          class="footer-licence"
+        >
+          <img
+            src="https://licensebuttons.net/l/by-sa/4.0/88x31.png"
+            alt="CC BY-SA 4.0"
+          />
+          <span>CC BY-SA 4.0</span>
         </a>
-        <a href="resources.html" class="next">
-          <span class="label">Next</span>
-          <span class="title">Resources &amp; Tips</span>
-        </a>
-      </nav>
-
-    </div>
-
-    <!-- Sidebar -->
-    <aside class="page-sidebar">
-      <nav class="sidebar-nav" aria-label="On this page">
-        <h4>On This Page</h4>
-        <ul>
-          <li><a href="#programme-mapping">Programme-Level Mapping</a></li>
-          <li><a href="#learning-outcomes">Learning Outcomes</a></li>
-          <li><a href="#consistency">Consistency &amp; Transparency</a></li>
-          <li><a href="#quality-processes">Quality Processes</a></li>
-          <li><a href="#supporting-staff">Supporting Staff</a></li>
-          <li><a href="#time-investment">Time Investment</a></li>
-          <li><a href="#institutional-supports">Institutional Supports</a></li>
-        </ul>
-      </nav>
-    </aside>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-col">
-        <h4>Framework</h4>
-        <ul>
-          <li><a href="framework.html">Framework Overview</a></li>
-          <li><a href="principles.html">Core Principles</a></li>
-          <li><a href="risk-detection.html">Risk &amp; Detection</a></li>
-        </ul>
+        <p>
+          2026 Assessment Redesign Framework | Dr Hazel Farrell |
+          <a href="https://genain3.ie" target="_blank" rel="noopener"
+            >GenAI:N3</a
+          ><br />HTML version developed by Ken McCarthy using Claude Code
+        </p>
       </div>
-      <div class="footer-col">
-        <h4>Assessment</h4>
-        <ul>
-          <li><a href="integration.html">AI Integration</a></li>
-          <li><a href="agentic-ai.html">Agentic AI</a></li>
-          <li><a href="strategies.html">Design Strategies</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="quality.html">Quality Assurance</a></li>
-          <li><a href="resources.html">Resources &amp; Tips</a></li>
-          <li><a href="glossary.html">Glossary</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" class="footer-licence">
-        <img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="CC BY-SA 4.0">
-        <span>CC BY-SA 4.0</span>
-      </a>
-      <p>2026 Assessment Redesign Framework | Dr Hazel Farrell | <a href="https://genain3.ie" target="_blank" rel="noopener">GenAI:N3</a><br>HTML version developed by Ken McCarthy using Claude Code</p>
-    </div>
-  </footer>
+    </footer>
 
-<script src="enhancements.js" defer></script>
-<script data-goatcounter="https://arf.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-</body>
+    <script src="enhancements.js" defer></script>
+    <script
+      data-goatcounter="https://arf.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
 </html>
