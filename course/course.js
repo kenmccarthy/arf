@@ -158,6 +158,128 @@
     }
   }
 
+  /* --- Risk Scenario Stepper (Module 2) --- */
+  function initRiskScenarios() {
+    var container = document.getElementById('risk-activity');
+    if (!container) return;
+
+    var slides = container.querySelectorAll('.scenario-slide');
+    var dots = container.querySelectorAll('.scenario-dot');
+    var progressText = container.querySelector('.scenario-progress-text');
+    var reflection = document.getElementById('risk-reflection');
+    var currentSlide = 0;
+    var total = slides.length;
+
+    // Init each slide's risk options
+    slides.forEach(function (slide, slideIndex) {
+      var options = slide.querySelectorAll('.risk-option');
+      var feedback = slide.querySelector('.feedback-card');
+      var nextBtn = slide.querySelector('.scenario-next-btn');
+      var selected = null;
+
+      options.forEach(function (opt) {
+        opt.addEventListener('click', function () {
+          var risk = opt.getAttribute('data-risk');
+
+          // Toggle off if clicking same
+          if (selected === risk) {
+            selected = null;
+            opt.classList.remove('selected');
+            if (feedback) feedback.style.display = 'none';
+            if (nextBtn) nextBtn.style.display = 'none';
+            return;
+          }
+
+          selected = risk;
+          options.forEach(function (o) { o.classList.remove('selected'); });
+          opt.classList.add('selected');
+
+          // Show feedback
+          if (feedback) {
+            feedback.style.display = 'none';
+            void feedback.offsetWidth;
+            feedback.style.display = 'block';
+            feedback.classList.add('visible');
+            setTimeout(function () {
+              feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+          }
+
+          // Show next button
+          if (nextBtn) nextBtn.style.display = '';
+
+          // Mark dot as done
+          if (dots[slideIndex]) dots[slideIndex].classList.add('done');
+        });
+      });
+
+      // Next button
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function () {
+          if (slideIndex < total - 1) {
+            goToSlide(slideIndex + 1);
+          } else {
+            // Last scenario - show reflection
+            if (reflection) reflection.style.display = 'block';
+          }
+        });
+      }
+    });
+
+    function goToSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = index;
+      slides[currentSlide].classList.add('active');
+
+      // Update dots
+      dots.forEach(function (d, i) {
+        d.classList.toggle('active', i === currentSlide);
+      });
+
+      // Update progress text
+      if (progressText) {
+        progressText.textContent = 'Scenario ' + (currentSlide + 1) + ' of ' + total;
+      }
+
+      // Scroll to top of activity
+      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  /* --- Module 2 Knowledge Check (reflective, no right/wrong) --- */
+  function initKnowledgeCheckM2() {
+    var container = document.getElementById('knowledge-check-m2');
+    if (!container) return;
+
+    var riskOptions = container.querySelectorAll('.risk-option');
+    var feedback = document.getElementById('kc-m2-feedback');
+    var textareas = container.querySelectorAll('.open-text');
+
+    riskOptions.forEach(function (opt) {
+      opt.addEventListener('click', function () {
+        var risk = opt.getAttribute('data-risk');
+
+        // Toggle
+        if (opt.classList.contains('selected')) {
+          opt.classList.remove('selected');
+          if (feedback) feedback.style.display = 'none';
+          return;
+        }
+
+        riskOptions.forEach(function (o) { o.classList.remove('selected'); });
+        opt.classList.add('selected');
+
+        // Show feedback
+        if (feedback) {
+          feedback.style.display = 'none';
+          void feedback.offsetWidth;
+          feedback.style.display = 'block';
+          feedback.classList.add('visible');
+        }
+      });
+    });
+  }
+
   /* --- Scroll to top --- */
   function initScrollToTop() {
     var btn = document.createElement('button');
@@ -193,6 +315,8 @@
     initCourseNav();
     initScenario();
     initKnowledgeCheck();
+    initRiskScenarios();
+    initKnowledgeCheckM2();
     initScrollToTop();
   }
 
