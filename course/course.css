@@ -345,6 +345,11 @@ blockquote {
   color: var(--color-incorrect);
 }
 
+.limitation-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
 .limitation-card h4 {
   margin: 0 0 var(--space-xs) 0;
   font-size: 0.95rem;
@@ -371,6 +376,16 @@ blockquote {
   background: var(--color-surface);
 }
 
+.comparison-col.caution {
+  background: var(--color-incorrect-bg);
+  border-right: 1px solid var(--color-border);
+}
+
+.comparison-col.caution .comparison-header {
+  color: var(--color-incorrect);
+  background: rgba(220, 38, 38, 0.06);
+}
+
 .comparison-col.highlight {
   background: var(--color-track2-bg);
   border-left: 3px solid var(--color-track2);
@@ -385,7 +400,7 @@ blockquote {
   border-bottom: 1px solid var(--color-border);
 }
 
-.comparison-col:first-child .comparison-header {
+.comparison-col:first-child:not(.caution) .comparison-header {
   color: var(--color-text-muted);
   background: var(--color-border-light);
 }
@@ -1124,6 +1139,11 @@ blockquote {
 
   .comparison-container {
     grid-template-columns: 1fr;
+  }
+
+  .comparison-col.caution {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
   }
 
   .comparison-col.highlight {
