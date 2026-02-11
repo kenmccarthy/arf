@@ -31,51 +31,58 @@
     });
   }
 
-  /* --- Scenario Activity --- */
+  /* --- Scenario Activity (toggle/re-selectable) --- */
   function initScenario() {
     var container = document.getElementById('scenario-activity');
     if (!container) return;
 
     var options = container.querySelectorAll('.option-card');
     var feedbacks = container.querySelectorAll('.feedback-card');
-    var selected = false;
+    var reflection = container.querySelector('.reflection-box');
+    var currentChoice = null;
 
     options.forEach(function (card) {
       card.addEventListener('click', function () {
-        if (selected) return;
-        selected = true;
-
         var choice = card.getAttribute('data-option');
 
-        // Mark selected and disable others
-        options.forEach(function (c) {
-          c.classList.add('disabled');
-          if (c === card) {
-            c.classList.add('selected');
-          }
-        });
+        // If clicking the already-selected card, deselect it
+        if (currentChoice === choice) {
+          currentChoice = null;
+          card.classList.remove('selected');
+          // Hide all feedback
+          feedbacks.forEach(function (fb) { fb.classList.remove('visible'); });
+          if (reflection) reflection.style.display = 'none';
+          return;
+        }
 
-        // Show the matching feedback
+        currentChoice = choice;
+
+        // Update selection visuals
+        options.forEach(function (c) { c.classList.remove('selected'); });
+        card.classList.add('selected');
+
+        // Show only the matching feedback, hide others
         feedbacks.forEach(function (fb) {
           if (fb.getAttribute('data-for') === choice) {
+            fb.classList.remove('visible');
+            // Force reflow for re-animation
+            void fb.offsetWidth;
             fb.classList.add('visible');
-            // Scroll to feedback
             setTimeout(function () {
               fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }, 100);
+          } else {
+            fb.classList.remove('visible');
           }
         });
 
         // Show reflection box
-        var reflection = container.querySelector('.reflection-box');
-        if (reflection) {
-          reflection.style.display = 'block';
-        }
+        if (reflection) reflection.style.display = 'block';
       });
     });
   }
 
-  /* --- Knowledge Check --- */
+  /* --- Knowledge Check (re-selectable) --- */
   function initKnowledgeCheck() {
     var container = document.getElementById('knowledge-check');
     if (!container) return;
@@ -85,11 +92,26 @@
     var feedbacks = container.querySelectorAll('.feedback-card');
     var correctAnswer = container.getAttribute('data-correct');
     var selectedOption = null;
-    var submitted = false;
+
+    function reset() {
+      selectedOption = null;
+      options.forEach(function (o) {
+        o.classList.remove('selected', 'correct', 'incorrect', 'disabled');
+      });
+      feedbacks.forEach(function (fb) { fb.classList.remove('visible'); });
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.style.display = '';
+        submitBtn.textContent = 'Check Answer';
+      }
+    }
 
     options.forEach(function (opt) {
       opt.addEventListener('click', function () {
-        if (submitted) return;
+        // If already showing results, reset to allow retry
+        if (submitBtn && submitBtn.style.display === 'none') {
+          reset();
+        }
 
         selectedOption = opt.getAttribute('data-option');
 
@@ -104,17 +126,12 @@
 
     if (submitBtn) {
       submitBtn.addEventListener('click', function () {
-        if (!selectedOption || submitted) return;
-        submitted = true;
-
-        // Disable all options
-        options.forEach(function (o) {
-          o.classList.add('disabled');
-          o.classList.remove('selected');
-        });
+        if (!selectedOption) return;
 
         // Mark correct/incorrect
         options.forEach(function (o) {
+          o.classList.remove('selected');
+          o.classList.add('disabled');
           var val = o.getAttribute('data-option');
           if (val === correctAnswer) {
             o.classList.add('correct');
@@ -126,6 +143,7 @@
         // Show appropriate feedback
         var isCorrect = selectedOption === correctAnswer;
         feedbacks.forEach(function (fb) {
+          fb.classList.remove('visible');
           var forVal = fb.getAttribute('data-for');
           if (forVal === 'correct' && isCorrect) {
             fb.classList.add('visible');
@@ -134,7 +152,7 @@
           }
         });
 
-        // Hide submit button
+        // Hide submit, allow clicking an option to try again
         submitBtn.style.display = 'none';
       });
     }
