@@ -506,6 +506,130 @@
     }
   }
 
+  /* --- Action Plan (Module 5) --- */
+  function initActionPlan() {
+    var container = document.getElementById('action-plan');
+    if (!container) return;
+
+    // Section 1: Next step selection with contextual feedback
+    var nextStepContainer = document.getElementById('action-nextstep');
+    if (nextStepContainer) {
+      var nsOptions = nextStepContainer.querySelectorAll('.opportunity-option');
+      var nsFeedbacks = container.querySelectorAll('#action-nextstep ~ .context-feedback');
+      var selectedNS = null;
+
+      // Gather feedbacks that are siblings after #action-nextstep
+      var parent = nextStepContainer.parentElement;
+      nsFeedbacks = parent.querySelectorAll('.action-section:first-child .context-feedback');
+
+      nsOptions.forEach(function (opt) {
+        opt.addEventListener('click', function () {
+          var value = opt.getAttribute('data-value');
+
+          if (selectedNS === value) {
+            selectedNS = null;
+            opt.classList.remove('selected');
+            nsFeedbacks.forEach(function (fb) { fb.classList.remove('visible'); });
+            return;
+          }
+
+          selectedNS = value;
+          nsOptions.forEach(function (o) { o.classList.remove('selected'); });
+          opt.classList.add('selected');
+
+          nsFeedbacks.forEach(function (fb) {
+            if (fb.getAttribute('data-for') === value) {
+              fb.classList.remove('visible');
+              void fb.offsetWidth;
+              fb.classList.add('visible');
+            } else {
+              fb.classList.remove('visible');
+            }
+          });
+        });
+      });
+    }
+
+    // Section 2: Stakeholder checkboxes with dynamic count
+    var stakeholderSection = document.getElementById('stakeholder-section');
+    if (stakeholderSection) {
+      var sChecks = stakeholderSection.querySelectorAll('input[type="checkbox"]');
+      var sMsg = stakeholderSection.querySelector('.stakeholder-msg');
+
+      sChecks.forEach(function (chk) {
+        chk.addEventListener('change', function () {
+          var count = stakeholderSection.querySelectorAll('input:checked').length;
+          if (sMsg) {
+            if (count > 0) {
+              sMsg.querySelector('p').textContent = 'You\u2019ve identified ' + count + ' stakeholder' + (count !== 1 ? 's' : '') + '. That\u2019s realistic. You don\u2019t need everyone\u2019s permission to pilot a redesign, but you may need their buy-in for sustainability. Start with your closest colleague, test ideas, then expand the circle.';
+              sMsg.style.display = 'block';
+              sMsg.classList.add('visible');
+            } else {
+              sMsg.style.display = 'none';
+              sMsg.classList.remove('visible');
+            }
+          }
+        });
+      });
+    }
+
+    // Section 3: Support checkboxes with message
+    var supportSection = document.getElementById('support-section');
+    if (supportSection) {
+      var supChecks = supportSection.querySelectorAll('input[type="checkbox"]');
+      var supMsg = supportSection.querySelector('.support-msg');
+
+      supChecks.forEach(function (chk) {
+        chk.addEventListener('change', function () {
+          var count = supportSection.querySelectorAll('input:checked').length;
+          if (supMsg) {
+            if (count > 0) {
+              supMsg.style.display = 'block';
+              supMsg.classList.add('visible');
+            } else {
+              supMsg.style.display = 'none';
+              supMsg.classList.remove('visible');
+            }
+          }
+        });
+      });
+    }
+
+    // Section 4: Commitment reveal
+    var commitBtn = container.querySelector('.commit-btn');
+    var commitFeedback = container.querySelector('.commit-feedback');
+    if (commitBtn && commitFeedback) {
+      commitBtn.addEventListener('click', function () {
+        commitFeedback.style.display = 'block';
+        commitFeedback.classList.add('visible');
+        commitBtn.style.display = 'none';
+        setTimeout(function () {
+          commitFeedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      });
+    }
+  }
+
+  /* --- Module 5 Knowledge Check (reflective, reveal feedback) --- */
+  function initKnowledgeCheckM5() {
+    var container = document.getElementById('knowledge-check-m5');
+    if (!container) return;
+
+    var revealBtn = container.querySelector('.kc-reveal');
+    var feedback = document.getElementById('kc-m5-feedback');
+
+    if (revealBtn && feedback) {
+      revealBtn.addEventListener('click', function () {
+        feedback.style.display = 'block';
+        feedback.classList.add('visible');
+        revealBtn.style.display = 'none';
+        setTimeout(function () {
+          feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      });
+    }
+  }
+
   /* --- Scroll to top --- */
   function initScrollToTop() {
     var btn = document.createElement('button');
@@ -547,6 +671,8 @@
     initKnowledgeCheckM3();
     initWorkbench();
     initKnowledgeCheckM4();
+    initActionPlan();
+    initKnowledgeCheckM5();
     initScrollToTop();
   }
 
