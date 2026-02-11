@@ -280,6 +280,81 @@
     });
   }
 
+  /* --- Strategy Explorer (Module 3) --- */
+  function initStrategyExplorer() {
+    var container = document.getElementById('strategy-explorer');
+    if (!container) return;
+
+    var cards = container.querySelectorAll('.strategy-exp-card');
+    cards.forEach(function (card) {
+      var header = card.querySelector('.strategy-exp-header');
+      if (!header) return;
+
+      header.addEventListener('click', function () {
+        var isOpen = card.classList.contains('open');
+        card.classList.toggle('open');
+        header.setAttribute('aria-expanded', !isOpen);
+      });
+
+      // Keyboard support
+      header.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          header.click();
+        }
+      });
+    });
+  }
+
+  /* --- Module 3 Knowledge Check (scenario-based, per-option feedback) --- */
+  function initKnowledgeCheckM3() {
+    var container = document.getElementById('knowledge-check-m3');
+    if (!container) return;
+
+    var options = container.querySelectorAll('.option-card');
+    var feedbacks = container.querySelectorAll('.feedback-card');
+    var closingNote = container.querySelector('.closing-note');
+    var currentChoice = null;
+
+    options.forEach(function (card) {
+      card.addEventListener('click', function () {
+        var choice = card.getAttribute('data-option');
+
+        // Toggle off if clicking same
+        if (currentChoice === choice) {
+          currentChoice = null;
+          card.classList.remove('selected');
+          feedbacks.forEach(function (fb) { fb.classList.remove('visible'); });
+          if (closingNote) closingNote.style.display = 'none';
+          return;
+        }
+
+        currentChoice = choice;
+
+        // Update selection
+        options.forEach(function (c) { c.classList.remove('selected'); });
+        card.classList.add('selected');
+
+        // Show matching feedback
+        feedbacks.forEach(function (fb) {
+          if (fb.getAttribute('data-for') === choice) {
+            fb.classList.remove('visible');
+            void fb.offsetWidth;
+            fb.classList.add('visible');
+            setTimeout(function () {
+              fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+          } else {
+            fb.classList.remove('visible');
+          }
+        });
+
+        // Show closing note
+        if (closingNote) closingNote.style.display = 'block';
+      });
+    });
+  }
+
   /* --- Scroll to top --- */
   function initScrollToTop() {
     var btn = document.createElement('button');
@@ -317,6 +392,8 @@
     initKnowledgeCheck();
     initRiskScenarios();
     initKnowledgeCheckM2();
+    initStrategyExplorer();
+    initKnowledgeCheckM3();
     initScrollToTop();
   }
 
