@@ -355,6 +355,157 @@
     });
   }
 
+  /* --- Redesign Workbench (Module 4) --- */
+  function initWorkbench() {
+    var container = document.getElementById('redesign-workbench');
+    if (!container) return;
+
+    var steps = container.querySelectorAll('.workbench-step');
+    var dots = container.querySelectorAll('.workbench-dot');
+    var progressText = container.querySelector('.workbench-progress-text');
+    var total = steps.length;
+    var current = 0;
+
+    function goToStep(index) {
+      if (index < 0 || index >= total) return;
+
+      // Mark completed steps
+      if (index > current) {
+        dots[current].classList.remove('active');
+        dots[current].classList.add('done');
+      }
+      // Going back: remove done from steps after target
+      if (index < current) {
+        for (var i = index + 1; i <= current; i++) {
+          dots[i].classList.remove('active', 'done');
+        }
+      }
+
+      steps[current].classList.remove('active');
+      current = index;
+      steps[current].classList.add('active');
+
+      dots.forEach(function (d, i) {
+        d.classList.toggle('active', i === current);
+      });
+
+      if (progressText) {
+        progressText.textContent = 'Step ' + (current + 1) + ' of ' + total;
+      }
+
+      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Next buttons
+    container.querySelectorAll('.workbench-next').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        // If going to Step 4, update paths
+        if (current === 2) {
+          updatePaths();
+        }
+        goToStep(current + 1);
+      });
+    });
+
+    // Back buttons
+    container.querySelectorAll('.workbench-back').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        goToStep(current - 1);
+      });
+    });
+
+    // Step 2: Opportunity selection with contextual feedback
+    var step2 = steps[1];
+    if (step2) {
+      var opOptions = step2.querySelectorAll('.opportunity-option');
+      var ctxFeedbacks = step2.querySelectorAll('.context-feedback');
+      var selectedOp = null;
+
+      opOptions.forEach(function (opt) {
+        opt.addEventListener('click', function () {
+          var value = opt.getAttribute('data-value');
+
+          // Toggle off
+          if (selectedOp === value) {
+            selectedOp = null;
+            opt.classList.remove('selected');
+            ctxFeedbacks.forEach(function (fb) { fb.classList.remove('visible'); });
+            return;
+          }
+
+          selectedOp = value;
+          opOptions.forEach(function (o) { o.classList.remove('selected'); });
+          opt.classList.add('selected');
+
+          ctxFeedbacks.forEach(function (fb) {
+            if (fb.getAttribute('data-for') === value) {
+              fb.classList.remove('visible');
+              void fb.offsetWidth;
+              fb.classList.add('visible');
+            } else {
+              fb.classList.remove('visible');
+            }
+          });
+        });
+      });
+    }
+
+    // Step 3: Strategy checkbox styling
+    var step3 = steps[2];
+    if (step3) {
+      var stratChecks = step3.querySelectorAll('.strategy-check');
+      stratChecks.forEach(function (chk) {
+        var input = chk.querySelector('input[type="checkbox"]');
+        chk.addEventListener('click', function (e) {
+          if (e.target !== input) {
+            input.checked = !input.checked;
+          }
+          chk.classList.toggle('checked', input.checked);
+        });
+      });
+    }
+
+    // Step 4: Show/hide paths based on Step 3 selections
+    function updatePaths() {
+      var step4 = steps[3];
+      if (!step4 || !step3) return;
+
+      var paths = step4.querySelectorAll('.redesign-path');
+      var anyVisible = false;
+
+      paths.forEach(function (path) {
+        var strategy = path.getAttribute('data-strategy');
+        var matchCheck = step3.querySelector('.strategy-check[data-strategy="' + strategy + '"] input');
+        var isSelected = matchCheck && matchCheck.checked;
+        path.classList.toggle('visible', isSelected);
+        if (isSelected) anyVisible = true;
+      });
+
+      var noMsg = step4.querySelector('.no-selection-msg');
+      if (noMsg) noMsg.style.display = anyVisible ? 'none' : 'block';
+    }
+  }
+
+  /* --- Module 4 Knowledge Check (reveal feedback) --- */
+  function initKnowledgeCheckM4() {
+    var container = document.getElementById('knowledge-check-m4');
+    if (!container) return;
+
+    var revealBtn = container.querySelector('.kc-reveal');
+    var feedback = document.getElementById('kc-m4-feedback');
+
+    if (revealBtn && feedback) {
+      revealBtn.addEventListener('click', function () {
+        feedback.style.display = 'block';
+        feedback.classList.add('visible');
+        revealBtn.style.display = 'none';
+        setTimeout(function () {
+          feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      });
+    }
+  }
+
   /* --- Scroll to top --- */
   function initScrollToTop() {
     var btn = document.createElement('button');
@@ -394,6 +545,8 @@
     initKnowledgeCheckM2();
     initStrategyExplorer();
     initKnowledgeCheckM3();
+    initWorkbench();
+    initKnowledgeCheckM4();
     initScrollToTop();
   }
 
