@@ -16,17 +16,21 @@ This framework supports educators in redesigning assessments to ensure they rema
 | **Agentic AI** | `agentic-ai.html` | Emerging challenges from agentic AI systems and five assessment design responses |
 | **Design Strategies** | `strategies.html` | Practical assessment design strategies including approaches for large cohorts |
 | **Quality Assurance** | `quality.html` | Programme-level alignment, quality processes, time investment, and institutional support |
-| **Resources & Tips** | `resources.html` | Seven practical tips, the postplagiarism concept, reviewer acknowledgements, and a reading list |
+| **Resources & Tips** | `resources.html` | Seven practical tips, the postplagiarism concept, reviewer acknowledgements, reading list, and downloadable PDF |
 | **Glossary** | `glossary.html` | 34 key terms with definitions and links back to relevant sections |
+| **Course** | `course/index.html` | Self-directed course with 5 interactive modules for educators redesigning assessments |
 
 ## Technology
 
 - Static HTML5, CSS3, and vanilla JavaScript — no frameworks or build tools required
 - CSS custom properties (design tokens) for consistent theming
 - Responsive design with mobile hamburger navigation
+- Image lightbox for enlarged viewing (click to open, click or Escape to close)
 - Print-friendly styles
 - WCAG accessibility features (focus-visible, reduced motion, semantic HTML)
 - SVG favicon with PNG fallbacks
+- Self-directed interactive course with 5 modules
+- Downloadable PDF version of the framework
 
 ## Colour Scheme
 
@@ -50,16 +54,27 @@ arf/
 ├── resources.html          # Resources & Tips
 ├── glossary.html           # Glossary
 ├── style.css               # Design system & styles
-├── enhancements.js         # Lightweight UX enhancements
+├── enhancements.js         # Lightweight UX enhancements (scroll-to-top, sidebar, lightbox)
 ├── favicon.svg             # SVG favicon
 ├── favicon.png             # 32x32 PNG favicon
 ├── apple-touch-icon.png    # 180x180 Apple touch icon
-└── images/
-    ├── hazel-farrell.jpg         # Author photo
-    ├── hardman-taxonomy.jpg      # Post-AI Learning Taxonomy
-    ├── furze-ai-scale.jpg        # AI Assessment Scale
-    ├── virmani-lau-impact.jpg    # Time/Impact chart
-    └── eaton-postplagiarism.jpg  # 6 Tenets of Postplagiarism
+├── images/
+│   ├── hazel-farrell.jpg         # Author photo
+│   ├── hardman-taxonomy.png      # Post-AI Learning Taxonomy
+│   ├── furze-ai-scale.png        # AI Assessment Scale
+│   ├── virmani-lau-impact.jpg    # Time/Impact chart
+│   └── eaton-postplagiarism.jpeg # 6 Tenets of Postplagiarism
+├── files/
+│   └── 2026_Assessment_Redesign_Framework.pdf  # Downloadable PDF
+└── course/
+    ├── index.html           # Course overview
+    ├── course.css           # Course-specific styles
+    ├── course.js            # Course JavaScript
+    ├── module1.html         # Why Assessment Redesign?
+    ├── module2.html         # Assess Your Risk
+    ├── module3.html         # Understand Your Options
+    ├── module4.html         # Redesign One Assessment
+    └── module5.html         # Take It Forward
 ```
 
 ## Deployment
